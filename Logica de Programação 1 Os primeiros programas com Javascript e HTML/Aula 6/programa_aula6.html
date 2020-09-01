@@ -1,0 +1,111 @@
+<meta charset="UTF-8">
+
+<!--Sem condicionais-->
+<script>
+
+function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function print(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+var vitorias = parseInt(prompt("Entre com o numero de vitorias: "));
+var empates = parseInt(prompt("Entre com o numero de empates: "));
+
+var pontos = (vitorias * 3) + empates;
+
+print("Os pontos do seu time é " + pontos);
+
+</script>
+
+<br>
+<br>
+
+<!--Com condicionais-->
+
+<script>
+
+function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function print(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+var vitorias = parseInt(prompt("Entre com o numero de vitorias: "));
+var empates = parseInt(prompt("Entre com o numero de empates: "));
+
+var pontos = (vitorias * 3) + empates;
+
+print("Os pontos do seu time é " + pontos);
+
+if (pontos > 28){
+    print("Seu time esta melhor que ano passado. ");
+}
+if (pontos < 28){
+    print("Seu time esta pior que o ano passado. ");
+}
+if (pontos == 28){
+    print("Seu time esta igual que o ano passado.");
+}
+   
+</script>
+
+<br>
+<br>
+
+<!-- Personalisar com condicionais o programa da aula 5-->
+
+<script>
+//funcao pular linha;
+    function pulaLinha() {
+
+        document.write("<br>");
+}
+
+//funcao imprimir
+    function print(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+//funcao calcula IMC;
+function calculaImc(altura, peso) {
+
+     return peso / (altura * altura);
+}
+
+// variaveis:
+var nome = prompt("Informe seu nome: ");
+var suaAltura = prompt(nome + " informe sua altura: ");
+var seupeso = prompt(nome + " informe seu peso: ");
+var seuImc = calculaImc(suaAltura, seupeso);
+
+print(nome + " o imc seu é " + Math.round(seuImc));
+
+if (seuImc < 18.5){
+    print("Voce esta abaixo do recomendado. ");
+}
+if(seuImc > 35){
+    print("Voce esta acima do recomendado ");
+}
+if(seuImc >= 18.5 && seuImc <= 35){
+    print("Seu IMC esta otimo! ");
+}
+</script>
+
+<br>
+<br>
+

@@ -1,0 +1,30 @@
+HTML5 e CSS3 parte 2: Posicionamento, listas e navegação
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Definição e Uso: https://www.w3schools.com/cssref/sel_hover.asp
+O :hoverseletor é usado para selecionar elementos quando você passa o mouse sobre eles.
+
+Dica: O seletor: hover pode ser usado em todos os elementos, não apenas em links.
+
+Dica: Use o seletor : link para estilizar links para páginas não visitadas, o seletor : visitado para estilizar links para páginas visitadas e o seletor : 
+active para estilizar o link ativo.
+
+Nota:: hover DEVE vir depois: link e: visitou (se houver) na definição CSS, para ser eficaz!
+
+Exemplo
+Selecione e estilize um link ao passar o mouse sobre ele:
+
+a:hover {
+  background-color: yellow;
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nesta aula, aprendemos:
+
+Algumas pseudo-classes CSS
+hover, quando o usuário passa o cursor sobre o elemento
+active, quando um elemento está sendo ativado pelo usuário
+A mudar a cor do texto e/ou da borda de um elemento, quando o usuário passar o cursor sobre o mesmo
+A mudar a cor da borda de um elemento, quando o mesmo estiver sendo ativado pelo usuário

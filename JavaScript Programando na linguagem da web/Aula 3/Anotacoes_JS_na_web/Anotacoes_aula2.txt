@@ -1,0 +1,11 @@
+JavaScript: Programando na linguagem da web
+
+Para mais teoria : https://www.w3schools.com/js/default.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Neste capítulo vimos: O codigo principal foi anotado algumas informacoes como comentario para apoio na leitura.
+
+O operador lógico de OU ( || )
+O operador lógico de E ( && )
+Busca de elementos

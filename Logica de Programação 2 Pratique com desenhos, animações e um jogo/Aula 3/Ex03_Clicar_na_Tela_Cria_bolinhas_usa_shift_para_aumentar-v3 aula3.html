@@ -1,0 +1,44 @@
+<!--Teste o código para lembrar o resultado. Quero propor uma mudança nesse código que é a seguinte: toda vez que o usuário clicar na 
+tela com o SHIFT pressionado, vamos somar 10 ao valor do raio atual. Sendo assim, mesmo soltando o SHIFT as próximas bolinhas utilizarão o mesmo valor de raio. 
+Se clicarmos diversas vezes segurando SHIFT teremos uma bola cada vez maior.
+
+Ainda vamos incrementar esse código, mas é preciso que você resolva essa questão antes de continuar.
+
+Em um dos exercícios anteriores, aprendemos a desenhar uma bolinha de raio maior toda vez que um clique era feito na tela com a tecla SHIFT pressionada. 
+Vamos recapitular esse código:
+-->
+
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var raio = 10;
+
+    function desenhaCirculo(evento) {
+
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
+
+        console.log(x + ',' + y);
+
+        if (evento.shiftKey) {
+
+           raio = raio + 10;
+        }
+
+        pincel.fillStyle = 'yellow';
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * 3.14);
+        pincel.fill();
+
+    }
+
+    tela.onclick = desenhaCirculo;
+
+</script>

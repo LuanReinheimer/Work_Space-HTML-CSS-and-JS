@@ -1,0 +1,100 @@
+HTML5 e CSS3 parte 1: A primeira página da Web
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Listas HTML : https://www.w3schools.com/html/html_lists.asp
+Exemplo de lista HTML
+Uma lista não ordenada:
+
+Item
+Item
+Item
+Item
+
+Uma lista ordenada:
+
+Primeiro item
+Segundo item
+Terceiro item
+Quarto item
+
+Lista HTML não ordenada
+Uma lista não ordenada começa com a tag. Cada item da lista começa com a tag. <ul><li>
+
+Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão:
+
+Exemplo
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Lista HTML ordenada
+Uma lista ordenada começa com a tag. Cada item da lista começa com a tag. <ol> <li>
+
+Os itens da lista serão marcados com números por padrão:
+
+Exemplo
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+Resumo do capítulo
+Use o <ul>elemento HTML para definir uma lista não ordenada
+
+Use a list-style-typepropriedade CSS para definir o marcador do item da lista
+
+Use o <ol>elemento HTML para definir uma lista ordenada
+
+Use o type atributo HTML para definir o tipo de numeração
+
+Use o <li> elemento HTML para definir um item da lista
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bloco HTML e elementos embutidos : https://www.w3schools.com/html/html_blocks.asp
+
+Todo elemento HTML tem um valor de exibição padrão, dependendo do tipo de elemento que é.
+
+Os dois valores exibidos são: block e inline.
+
+Elementos em nível de bloco
+Um elemento no nível do bloco sempre inicia em uma nova linha e ocupa toda a largura disponível (se estende para a esquerda e direita, tanto quanto possível).
+
+O elemento <div> é um elemento no nível do bloco.
+Exemplo
+<div>Hello World</div>
+
+Outra aplicaçao de um bloco <div>
+
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <head>
+    </head>
+    <body>
+        <div class="principal"> // bloco criado dentro do dody para um texto assim podendo editar exclusivamente no css.
+            <h1></h1>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Nesta aula, aprendemos:
+
+A trabalhar com listas não-ordenadas e listas ordenadas
+Para cada um dos itens da lista, utilizamos a tag <li>
+O conceito das classes no CSS
+Elas servem para marcar itens, só que são repetíveis
+
+Como referenciar uma classe no CSS : Como usar classes dentro do HTML e referencialas no CSS: https://www.w3schools.com/html/html_classes.asp
+
+Divisões de conteúdo, utilizando a tag <div>
+Os comportamentos inline e block

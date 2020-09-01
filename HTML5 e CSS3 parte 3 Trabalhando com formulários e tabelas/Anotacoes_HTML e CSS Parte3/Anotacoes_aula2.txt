@@ -1,0 +1,87 @@
+HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O elemento <form>: https://www.w3schools.com/html/html_forms.asp
+O <form>elemento HTML define um formulário que é usado para coletar entrada do usuário:
+
+<form>
+.
+form elements
+.
+</form>
+Um formulário HTML contém elementos de formulário .
+
+Os elementos do formulário são tipos diferentes de elementos de entrada, como: campos de texto, caixas de seleção, botões de opção, botões de envio e muito mais.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O elemento <input>
+O <input> elemento é o elemento de formulário mais importante.
+
+O <input> elemento é exibido de várias maneiras, dependendo do atributo type .
+
+aqui estão alguns exemplos:
+Tipo	Descrição
+<input type = "text">	Define um campo de entrada de texto de linha única
+<input type = "radio">	Define um botão de opção (para selecionar uma das muitas opções)
+<input type = "submit">	Define um botão de envio (para enviar o formulário)
+
+Campos de texto
+<input type="text">define um campo de entrada de linha única para entrada de texto .
+
+Exemplo
+Um formulário com dois campos de entrada de texto:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O elemento <label>
+Observe o uso do <label>elemento no exemplo acima.
+
+A <label>tag define um rótulo para muitos elementos de formulário.
+
+O <label>elemento é útil para usuários de leitores de tela, porque o leitor de tela lê a carga do rótulo quando o usuário está focado no elemento de entrada.
+
+O <label>elemento também ajuda os usuários que têm dificuldade em clicar em regiões muito pequenas (como botões de opção ou caixas de seleção) - porque quando o usuário clica no texto no elemento <label>, alterna o botão de opção / caixa de seleção.
+
+O foratributo da tag <label> deve ser igual ao idatributo do elemento <input> para vinculá-los.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ O botão Enviar
+<input type="submit">define um botão para enviar os dados do formulário para um manipulador de formulários .
+
+O manipulador de formulários geralmente é uma página no servidor com um script para processar dados de entrada.
+
+O manipulador de formulários é especificado no atributo de ação do formulário .
+
+Exemplo
+Um formulário com um botão de envio:
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit"> // aqui um exemplo de criar um botao de enviar!
+</form>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nesta aula, aprendemos:
+
+A criar um formulário HTML
+A tag que o representa é a <form>
+A tag <input>, para a entrada de dados do usuário
+A criar uma etiqueta para o input, com a tag <label>
+A conectar um input com o seu label
+Colocamos um id para o input e associamos esse id ao atributo for do label
+Alguns tipos de input, como text e submit
+Que label e input por padrão possuem o display inline
+A estilizar o nosso formulário

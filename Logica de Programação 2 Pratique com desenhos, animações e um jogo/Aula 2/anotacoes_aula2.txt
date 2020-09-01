@@ -1,0 +1,11 @@
+Lógica de programação II pratique com desenhos, animações e um jogo
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O método strokeRect () desenha um retângulo (sem preenchimento). A cor padrão do traçado é preta.
+
+Dica: Use a propriedade strokeStyle para definir uma cor, gradiente ou padrão para estilizar o traçado.
+exemplo:
+
+pincel.strokeStyle = 'black';
+pincel.strokeRect(x, 0, 50, 50);

@@ -1,0 +1,19 @@
+JavaScript: Programando na linguagem da web
+
+Para mais teoria : https://www.w3schools.com/js/default.asp e https://developer.mozilla.org/en-US/docs/Web/Events
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Removendo um elemento do HTML com JavaScript
+A função do JavaScript responsável por remover um elemento do HTML é a remove(). Então temos que chamá-la no paciente que foi clicado.
+
+Quem será clicado? O dono do evento, certo? Este é que sofrerá a ação de duplo clique e executará a função. Para acessar o dono do evento, em que o evento está atrelado, 
+utilizaremos uma palavra reservada do JavaScript chamada this.
+O this é uma palavra de contexto ligada com quem acionou o evento, a quem o evento está atrelado. Como o evento está atrelado ao paciente, o this fará referência a ele.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Neste capítulo aprendemos:
+
+O novo evento de dblclick
+Como os eventos propagam atráves da página
+A delegação de eventos
+Como animar uma remoção com o setTimeout

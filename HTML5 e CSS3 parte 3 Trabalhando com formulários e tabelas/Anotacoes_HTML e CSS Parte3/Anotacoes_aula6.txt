@@ -1,0 +1,50 @@
+HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Definindo uma tabela HTML
+Uma tabela HTML é definida com a <table>tag
+
+Cada linha da tabela é definida com a <tr> tag Um cabeçalho da tabela é definido com a <th>tag Por padrão, os títulos das tabelas estão em negrito e centralizados. Os dados / célula da tabela são definidos com a <td>tag
+
+Exemplo
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+Nota: Os <td> elementos são os contêineres de dados da tabela.
+Eles podem conter todos os tipos de elementos HTML; texto, imagens, listas, outras tabelas, etc.
+
+Usando as tags <thead>, <tbody> e <tfoot>
+
+
+Como dividir uma tabela de forma mais semântica?
+Alternativa correta! As tags <thead>, <tbody> e <tfoot> ajudam a deixar o conteúdo da tabela mais bem dividido e mais semântico.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Nesta aula, aprendemos:
+
+A criar uma tabela HTML
+A tag table, que representa a tabela
+A tag tr, que representa a linha da tabela
+A tag td, que representa a célula da tabela
+A tag thead, que representa o cabeçalho da tabela
+A tag tbody, que representa o corpo da tabela
+A tag th, que representa a célula do cabeçalho da tabela
+A tag tfoot, que representa o rodapé da tabela
+A estilizar a tabela

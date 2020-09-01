@@ -1,0 +1,74 @@
+
+/* Configuração da fonte de todo o site*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Configuração do primeiro formulario*/
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+/*Configuração do estilo também para o parágrafo do formulário*/
+form label, form legend {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+/*Configuração do campo de mensagem do formulario*/
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+/*Configuração do estilo do checkbox do formulário*/
+.checkbox {
+    margin: 20px 0;
+}
+
+/*Configuração do estilo do botão enviar do formulário*/
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.enviar:hover{
+    background-color: darkorange;
+    transform: scale(1.2);
+}
+
+/*Configuração do estilo da tabela de horarios do formulário*/
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: gray;
+    color: white;
+    font-weight: bold;
+
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px ;
+
+}

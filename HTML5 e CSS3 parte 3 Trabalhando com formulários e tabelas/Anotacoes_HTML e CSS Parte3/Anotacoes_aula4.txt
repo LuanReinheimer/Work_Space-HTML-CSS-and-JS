@@ -1,0 +1,89 @@
+HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Definição e Uso : https://www.w3schools.com/tags/att_input_placeholder.asp
+O atributo placeholder especifica uma dica curta que descreve o valor esperado de um campo de entrada (por exemplo, um valor de amostra ou uma descrição resumida do formato esperado).
+A propriedade placeholder é usada para adicionar um texto no campo, para sugerir a forma como o campo deve ser preenchido.
+
+A dica curta é exibida no campo de entrada antes que o usuário insira um valor.
+
+Nota: O atributo placeholder funciona com os seguintes tipos de entrada: texto, pesquisa, URL, tel, email e senha.
+
+Atributo de marcador de posição <input> HTML
+
+Exemplo
+Um campo de entrada de telefone com um texto de espaço reservado:
+
+<form action="/action_page.php">
+  <label for="phone">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678"
+  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+  <small>Format: 123-45-678</small><br><br>
+  <input type="submit">
+</form> 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Definição e Uso https://www.w3schools.com/tags/att_input_checked.asp
+O atributo checked  é um atributo booleano.
+
+Quando presente, especifica que um elemento <input> deve ser pré-selecionado (marcado) quando a página carregar.
+
+A propriedade checked é usada para que um campo já carregue marcado, para facilitar a vida do usuário ou até para sugerir que aquele campo seja preenchido.
+
+O atributo marcado pode ser usado com <input type = "checkbox"> e <input type = "radio">.
+
+O atributo verificado também pode ser definido após o carregamento da página, com um JavaScript.
+
+Exemplo
+Um formulário HTML com uma caixa de seleção pré-selecionada:
+
+<form action="/action_page.php">
+  <input type="checkbox" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" name="vehicle3" value="Boat" checked>
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Definição e Uso: https://www.w3schools.com/tags/tag_fieldset.asp
+
+A <fieldset> tag é usada para agrupar elementos relacionados em um formulário.
+
+A <fieldset> tag desenha uma caixa ao redor dos elementos relacionados.
+
+Definição e Uso: https://www.w3schools.com/tags/tag_legend.asp
+A <legend>tag define uma legenda para o elemento <fieldset> .
+
+Exemplo
+Agrupe elementos relacionados em um formulário:
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nesta aula, aprendemos:
+
+Alguns tipos de inputs para celular: email, tel, number, password, date, datetime, month e search
+Como não permitir que um campo não seja preenchido, através do atributo required
+Como exibir uma sugestão de preenchimento para os campos, através do atributo placeholder
+Como deixar uma opção marcada por padrão nos nossos input radio e checkbox, através do atributo checked
+Como estruturar melhor o nosso código com fieldset e legend
+Como adicionar uma alternativa à imagem, descrevendo-a, com o atributo alt

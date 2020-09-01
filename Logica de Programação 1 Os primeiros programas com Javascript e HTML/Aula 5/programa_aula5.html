@@ -1,0 +1,93 @@
+<meta charset="UTF-8">
+
+<script>
+//funcao pular linha;
+    function pulaLinha() {
+
+        document.write("<br>");
+}
+
+//funcao imprimir
+    function print(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+//funcao calcula IMC;
+function calculaImc(altura, peso) {
+
+     return peso / (altura * altura);
+}
+
+// variaveis:
+var nome = prompt("Informe seu nome: ")
+var suaAltura = prompt(nome + "informe sua altura: ")
+var seupeso = prompt(nome + "Informe seu peso: ")
+var seuImc = calculaImc(suaAltura, seupeso);
+
+print(nome + " o imc seu é " + Math.round(seuImc));
+
+
+</script>
+
+<br> 
+
+<!--Exercicio 1:
+Helena teve a ideia de criar a função somaDoisNumeros. 
+Esta função precisa receber dois parâmetros e imprimir como 
+resultado a soma desses dois números.-->
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function somaDoisNumeros(numero1, numero2) {
+        mostra("A soma dos dois números é : " + (numero1 + numero2) );
+    }
+
+    somaDoisNumeros(10, 40);
+
+</script>
+
+<br>
+
+<!--Exercicio 2:
+Laércio criou a função calculaImc:
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc; \\ ele deveria ter colocado um RETURN imc para funcionar.
+    }
+
+    var imcCalculado = calculaImc(1.77, 75);
+    mostra("O meu IMC é : " + imcCalculado);
+</script>
+
+Contudo, o que está escrito no mundo HTML é o texto "O meu IMC é undefined".
+Como alterar o código de Laércio para que o retorno da função calculaImc seja para a variável 
+imcCalculado?-->
+
+
+<br>
+
+
+
+

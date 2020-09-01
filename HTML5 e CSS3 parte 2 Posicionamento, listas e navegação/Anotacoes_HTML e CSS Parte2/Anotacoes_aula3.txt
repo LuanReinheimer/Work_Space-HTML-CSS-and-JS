@@ -1,0 +1,12 @@
+HTML5 e CSS3 parte 2: Posicionamento, listas e navegação
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nesta aula, aprendemos:
+
+Como remover os estilos que o navegador cria automaticamente
+Como funciona os posicionamentos static, relative e absolute dos elementos
+Como posicionar o cabeçalho da nossa página
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

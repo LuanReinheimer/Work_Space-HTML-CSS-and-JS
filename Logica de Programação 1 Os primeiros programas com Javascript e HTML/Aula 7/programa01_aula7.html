@@ -1,0 +1,85 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function print(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+var limite = parseInt(prompt("Entre com a data limite"));
+
+var anoCopa = 1930;
+
+while(anoCopa <= limite) {
+
+    print("Teve copa em " + anoCopa);
+    anoCopa = anoCopa + 4;
+}
+
+print("FIM");
+
+</script>
+
+<br>
+<br>
+
+
+<!--Explicando tabuada com While-->
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function print(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+var multiplicador = 1;
+
+while(multiplicador <= 10) {
+
+    mostra(7 * multiplicador);
+    multiplicador ++;
+}
+
+mostra("FIM")
+
+</script>
+
+<!--Explicando tabuada com For-->
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+for(var multiplicador = 1; multiplicador <= 10; multiplicador ++) {
+
+    mostra(7 * multiplicador);
+
+}
+print("fim")
+
+</script>

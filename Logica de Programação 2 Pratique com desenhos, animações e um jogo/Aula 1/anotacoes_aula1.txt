@@ -1,0 +1,17 @@
+﻿Lógica de programação II pratique com desenhos, animações e um jogo
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O que é o HTML Canvas?
+O <canvas>elemento HTML é usado para desenhar gráficos dinamicamente, via JavaScript.
+
+O <canvas>elemento é apenas um contêiner para gráficos. Você deve usar o JavaScript para desenhar os gráficos.
+
+O Canvas possui vários métodos para desenhar caminhos, caixas, círculos, texto e adicionar imagens.
+
+Exemplos de tela
+Uma tela é uma área retangular em uma página HTML. Por padrão, uma tela não possui borda nem conteúdo.
+
+A marcação é assim:
+
+<canvas id="myCanvas" width="200" height="100"></canvas>
+Nota: Sempre especifique um idatributo (a ser referido em um script) e um atributo width e height para definir o tamanho da tela. Para adicionar uma borda, use o style atributo

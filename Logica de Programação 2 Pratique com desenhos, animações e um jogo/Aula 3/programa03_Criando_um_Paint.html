@@ -1,0 +1,51 @@
+<!--O que achou do exercício que permitia desenhar na tela? A única coisa chata é que só podíamos desenhar na cor azul. Que tal o usuário poder escolher de uma paleta a cor que desejar?
+
+Primeiro, vamos ao código que permite o desenho com o mouse:-->
+
+<canvas width="600" height="400"></canvas>
+selecione a cor <input type="color"> <!--Agora, vamos adicionar um input em nossa página logo após o canvas. No mundo HTML, existe o input do tipo color, 
+que ao ser clicado exibe uma paleta de cores para podermos selecionar:-->
+
+<script>
+
+    /*Assim como obtemos o canvas através de document.querySelector, também obtemos nosso input, que guardaremos na variável paleta. Lembre-se que paleta é o input lá do 
+    mundo HTML e para pegarmos o valor de um input precisamos fazer, no caso da nossa variável, paleta.value. 
+    Toda vez que alguém alterar a cor lá no mundo HTML, paleta.value automaticamente terá o novo valor. 
+    Sendo assim, podemos passar para pincel.fillStyle o valor de paleta.value:*/
+    var paleta = document.querySelector('input');
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var desenha = false;
+
+    function desenhaCirculo(evento) {
+
+        if(desenha) {
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillStyle = paleta.value; // sempre pega o valor atual da paleta!
+            pincel.beginPath();
+            pincel.arc(x, y, 10, 0, 2 * 3.14);
+            pincel.fill();
+        }
+        console.log(x + ',' + y);
+    }
+
+    tela.onmousemove = desenhaCirculo;
+
+    // atribuindo diretamente a função anônima
+    tela.onmousedown = function() {
+
+        desenha = true;
+    }
+
+    // atribuindo diretamente a função anônima
+     tela.onmouseup = function() {
+
+        desenha = false;
+    }
+
+</script>

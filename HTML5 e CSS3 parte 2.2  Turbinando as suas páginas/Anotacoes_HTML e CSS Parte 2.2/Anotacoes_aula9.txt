@@ -1,0 +1,21 @@
+HTML5 e CSS3 2.2: Turbinando as suas páginas
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+14
+
+Marcar como concluído
+ 
+Anotar
+Artigos
+HTML e CSS
+CSS: Conheça os pseudo-elementos
+
+Os pseudo-elementos nos permitem selecionar algumas áreas internas de um elemento HTML e customizá-las através de propriedades. 
+Selecionar a área que antecede o conteúdo de um elemento adicionando a ela texto ou imagens, ou estilizar apenas a primeira linha de um elemento de texto 
+são apenas algumas das possibilidades criadas por esse recurso.
+
+veja todos os detalhes sobre eles nestes links: https://www.devmedia.com.br/css-conheca-os-pseudo-elementos/38183
+                                                https://www.w3schools.com/css/css_pseudo_elements.asp
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

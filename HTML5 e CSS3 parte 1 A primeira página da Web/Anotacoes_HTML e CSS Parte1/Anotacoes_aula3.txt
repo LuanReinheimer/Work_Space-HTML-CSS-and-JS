@@ -1,0 +1,66 @@
+HTML5 e CSS3 parte 1: A primeira página da Web
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CSS externo link para ajudar na teoria.
+https://www.w3schools.com/html/html_css.asp
+
+Uma folha de estilos externa é usada para definir o estilo para muitas páginas HTML.
+
+Com uma folha de estilos externa, você pode alterar a aparência de um site inteiro, alterando um arquivo!
+
+Para usar uma folha de estilos externa, adicione um link a ela na <head>seção da página HTML:
+
+Exemplo
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Uma folha de estilos externa pode ser escrita em qualquer editor de texto. O arquivo não deve conter nenhum código HTML e deve ser salvo com uma extensão .css.
+
+Aqui está como o "styles.css" se parece:
+
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sobre as cores temos um site que explicara muito bem a respeito de como usalas.
+
+https://www.w3schools.com/html/html_colors.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nesta aula, aprendemos:
+
+A mexer na apresentação dos textos
+No alinhamento deles (text-align)
+No tamanho da fonte (font-size)
+Na cor de fundo (background)
+Na cor do texto (color)
+CSS inline
+Na linha onde temos a nossa tag, adicionamos a propriedade do CSS
+A tag <style>
+Dentro da tag, podemos colocar marcações de CSS referentes aos elementos que temos no nosso HTML
+A apresentação do CSS com um arquivo externo
+Como funciona o estilo em cascata do CSS
+Como importar um arquivo externo de CSS dentro da nossa página HTML
+Como representar cores no CSS
+Através do nome da cor
+Através do seu hexadecimal
+Através do seu RGB
+Nesta aula, começamos a mexer na apresentação dos textos, no alinhamento deles e no tamanho da fonte

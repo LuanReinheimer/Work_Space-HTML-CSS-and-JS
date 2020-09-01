@@ -1,0 +1,158 @@
+﻿Lógica de programação I Os primeiros passos com Js e HTML.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+criaremos uma variável numero, que recebe parseInt(), uma função existente no JavaScript, e preparada para receber 
+um texto a ser convertido em número.
+
+A função parseInt() terá como parâmetro a variável texto, que por sua vez tem no seu conteúdo uma string. Com isso, 
+queremos que isto seja convertido para número; isto é, no caso a string 10 se tornará o número 10:
+
+Importante lembrar que se quiséssemos ler um nome, por exemplo, não seria necessário utilizar a função parseInt(), 
+porque neste caso queremos que isto seja considerado como texto. Sempre que formos ler uma entrada, e a intenção for trabalhar com números, 
+temos que fazer o parseInt() para que o valor digitado, que por padrão é lido como texto, seja interpretado como um número.
+
+Exemplo:
+
+<script>
+
+var vitorias = parseInt(prompt("Entre com o numero de vitorias: "));
+var empates = parseInt(prompt("Entre com o numero de empates: "));
+
+var pontos = (vitorias * 3) + empates/
+
+print("Os pontos do seu time é " + pontos);
+
+</script>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Em JavaScript, temos as seguintes instruções condicionais:
+
+Use ifpara especificar um bloco de código a ser executado, se uma condição especificada for verdadeira
+Use elsepara especificar um bloco de código a ser executado, se a mesma condição for falsa
+Use else ifpara especificar uma nova condição para testar, se a primeira condição for falsa
+Use switchpara especificar muitos blocos alternativos de código a serem executados
+
+A estrutura condicional permite avaliar uma condição e, a partir dela, executar diferentes linhas de código. Considerando o seguinte código:
+
+var nomeUsuario = "Eduardo";
+var mensagem = "";
+  
+if (nomeUsuario == "Eduardo") {
+    mensagem = "Nome igual";   
+} else {
+    mensagem = "Nome diferente";   
+}
+O valor atribuído à variável mensagem será: “Nome igual”. A Figura 1 demonstra o que ocorre com a execução do código quando é declarada uma estrutura de condição.
+
+Estrutura condicional if
+
+Sintaxe
+
+if (condicao) {
+    // bloco de código
+ 
+}
+Condicao é a estrutura de condição a ser verificada para decidir se as linhas do bloco de código serão executadas ou não.
+
+Essa é a sintaxe básica de uma estrutura condicional, normalmente utilizada quando há apenas uma condição a ser avaliada. Caso haja mais uma condição, 
+deve-se utilizar a opção abaixo:
+
+<script>
+
+if (condicao) {
+  // bloco de código 1
+} else {
+  // bloco de código 2
+}
+
+</script>
+
+Caso a condição seja falsa, o bloco de código 1 não deve ser executado, mas o bloco de código 2 sim.
+
+Exemplos de if/else
+No exemplo a seguir demonstramos como programar uma estrutura condicional simples, com apenas uma condição:
+
+var semaforo = "verde";
+
+<script>
+
+if (semaforo == "verde") {
+    document.write("Pode passar");   
+} 
+
+</script>
+
+O valor impresso no console é: “Pode passar”.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Operadores aritméticos de JavaScript
+Operadores aritméticos realizam aritmética em números (literais ou variáveis).
+
+Descrição do Operador
++ Adição
+- Subtração
+* Multiplicação
+** Exponenciação (ES2016)
+/ Divisão
+% De módulo (restante)
+++ Incremento
+- Decremento
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Operadores de comparação JavaScript
+Descrição do Operador
+== igual a
+=== valor igual e tipo igual
+! = não é igual
+!== valor não igual ou tipo não igual
+> maior que
+< menos que
+>= maior ou igual a
+<= menor ou igual a
+? operador ternário
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Operadores lógicos JavaScript
+Descrição do Operador
+&& lógica e
+|| lógico ou
+! lógico não
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Há a função Math.random(), que gera um número aleatório. Pressionando a tecla "Enter", ele gerou um número entre 0 e 1, e todas as vezes
+ em que pressionarmos "Enter" surgirá um novo número. Entretanto, queremos que seja gerado um número entre 0 e 10.
+
+Queremos andar uma casa decimal para direita, e para isso multiplicaremos o número gerado por 10, da seguinte forma:
+
+Math.random() * 10
+Ao pressionarmos "Enter", é movida uma casa decimal para a direita. Por exemplo, onde anteriormente tínhamos um número 0.21, agora temos 2.1. 
+Podemos apertar "Enter" n vezes, e em todas elas surgirá um número diferente, com uma estrutura similar a esta:
+
+Math.random() * 10
+2.1240615385242934
+O primeiro número antes da vírgula sempre estará entre 0 e 9. Como queremos que o resultado esteja entre 0 e 10, utilizaremos a função Math.round() para 
+arredondarmos o resultado de Math.random():
+
+Math.round(Math.random() * 10);
+Ao pressionarmos "Enter", teremos sempre um novo número aleatório entre 0 e 10:
+
+Math.round(Math.random() * 10);
+1
+Math.round(Math.random() * 10);
+6
+Math.round(Math.random() * 10);
+7
+Math.round(Math.random() * 10);
+10
+
+Podemos simplificar fazendo desta maneira.
+
+Inteiros aleatórios em JavaScript
+Math.random()usado com Math.floor()pode ser usado para retornar números inteiros aleatórios.
+
+Exemplo
+Math.floor(Math.random() * 10);     // returns a random integer from 0 to 9
+Exemplo
+Math.floor(Math.random() * 11);      // returns a random integer from 0 to 10
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

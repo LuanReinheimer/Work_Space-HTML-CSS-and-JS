@@ -1,0 +1,156 @@
+Lógica de programação I Os primeiros passos com Js e HTML.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Estruturas de repetição:
+
+WHILE (Enquanto):
+A declaração while cria um laço que executa uma rotina especifica enquanto a condição de teste for avaliada como verdadeira. A condição é 
+avaliada antes da execução da rotina.
+Explicação: 
+
+<script>
+
+while (condição) {
+  rotina
+}
+
+</script>
+
+Condição
+Uma expressão avaliada antes de cada passagem através do laço. Se essa condição for avaliada como verdadeira, a rotina é executada.
+Quando a condição for avaliada como falsa, a execução continua na declaração depois do laço while.
+
+Rotina
+Uma declaração que é executada enquanto a condição é avaliada como verdadeira. Para executar multiplas declarações dentro de um laço, 
+use uma declaração em bloco ({ ... }) para agrupar essas declarações.
+
+Exemplo:
+O seguinte laço while itera enquanto n é menor que três.
+
+<script>
+
+var n = 0;
+var x = 0;
+
+while (n < 3) {
+  n++;
+  x += n;
+}
+
+</script>
+
+Cada iteração, o laço incrementa n e soma à x. Portanto, x e n assumem os seguintes valores:
+
+Depois da primeira passagem: n = 1 e x = 1
+Depois da segunda passagem: n = 2 e x = 3
+Depois da terceira passagem: n = 3 e x = 6
+Depois de completar a terceira passagem, a condição n < 3 não é mais verdadeira, então o laço termina.
+
+Exemplo 2:
+<script>
+
+var limite = parseInt(prompt("Entre com a data limite"));
+
+var anoCopa = 1930;
+
+while(anoCopa <= limite) {
+
+    mostra("Teve copa em " + anoCopa);
+    anoCopa = anoCopa + 4;
+}
+
+mostra("FIM");
+
+</script>
+
+Temos tambem o while(true) se alterarmos a condição para while(true), será repetida a instrução ao infinito até que seja colocado uma condicção de 
+parada dentro da rotina de execução.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Estruturas de repetição:
+
+FOR (PARA):
+
+for(), que possui uma estrutura com três espaços:
+
+for(espaço1; espaço2; espaço3) {
+
+}
+
+Cada um dos espaços é separado por um ponto e vírgula (;). Neste caso, a inicialização da variavel
+fica localizada no espaço1, diferentemente do while(), em que ficava fora:
+
+Em espaço2 do for, esta condição será inserida, este pedaço do for() conterá a condição para o JavaScript saber se deve continuar a repetir
+
+O terceiro espaço servirá para acrescer o a variavel do espaço 1 de + 1 ou ++. Se não fizermos isto, a condição da variavel será falsa.
+
+resumindo A estrutura do for() possui a mesma funcionalidade do while(), com a diferença de que ela é divida em três partes. A primeira é uma variável para inicializá-lo, 
+a que será incrementada, o segundo contém a condição de repetição, a última parte do for() é o incremento da variável
+
+A instrução for é dividida em três partes que são separadas por ponto e vírgula. A primeira é destinada a variável de incremento, a segundo à condição de repetição e 
+a última ao incremento da variável de incremento.
+
+Aliás, quando queremos incrementar de um em um, podemos usar o pós incremento:
+-----------------------------------------
+for( var contador = 1; contador <= 10; contador++ ) {
+    alert("Contador atual: " + contador);
+}
+-----------------------------------------
+Veja que usamos contador++ no lugar de contador = contador + 1. A primeira forma é muito mais enxuta.
+
+OBS: (É comum usarmos o zero para iniciar um laço de repetição. Isso nos trará vantagens quando, nas próximas atividades, 
+formos trabalhar com Array's. Mas preste atenção, quando usamos o zero para iniciar uma repetição, precisamos substituir o 
+sinal do limitador (espaco2), de <= (menor igual) para apenas < (menor), pois o zero conta como primeiro elemento dentro do laço.)
+
+Dito isso, temos o seguinte código:
+-----------------------------------------
+for( var i = 0; i < 10; i++ ) {
+    alert( "O resultado é " + (2 * i) );
+}
+-----------------------------------------
+Exemplo de uso:
+-----------------------------------------
+<script>
+
+for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+
+    document.write(7 * multiplicador);
+
+}
+
+</script>
+-----------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A função isNAN() determina se o valor é NaN ou não. Tenha cuidado, o cast em isNaN tem regras para serem observadas. Você pode ficar interessado no Number.isNaN() 
+que foi definido no ECMAScript 6 ou você pode usar typeof para determinar se o valor é Not-A-Number, NaN.
+
+isNaN(testValue)
+
+Parâmetros:
+
+testValue
+O valor a ser testado.
+
+Descrição
+A necessidade da função isNaN
+Ao contrário de todas as outras possibilidades de valores no JavaScript, não é possivel confiar nos operadores de igualdade (== e ===) 
+para determina se o valor é NaN ou não, porque ambos, NaN == NaN e NaN === NaN, terá como valor de retorno: false. Daí a necessidade da funçao isNAN.
+
+Origem dos valores NaN
+Os valores NaN são gerados quando operações aritiméticas tem como valores: undefined ou unrepresentable. Como valores, não fazem necessariamente condições de estouro. 
+NaN também resulta da tentativa de coerção para valores numéricos, de valores não numéricos, para que o valor numérico primitivo seja disponível.
+
+Por exemplo, divida zero por zero e o resultado será NaN , mas se dividir outros números por zero ele não será.
+
+Exemplo:
+
+var idade = parseInt(prompt("Digite sua idade"));
+
+while( isNaN(idade) ) {
+    idade = parseInt(prompt("Digite sua idade"));    
+}
+
+alert(idade);

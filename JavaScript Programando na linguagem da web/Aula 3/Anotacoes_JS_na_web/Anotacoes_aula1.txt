@@ -1,0 +1,108 @@
+﻿JavaScript: Programando na linguagem da web
+
+Para mais teoria : https://www.w3schools.com/js/default.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sobre o JS: https://www.w3schools.com/js/default.asp
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+É uma linguagem bastante poderosa que permite que o usuário consiga interagir com a página. Isto já seria um excelente motivo para despertar seu interesse pela linguagem,
+mas além de ser dominante nos cenários dos navegadores, o JavaScript recentemente também se expandiu para o lado do servidor com o lançamento do Node.js, um ambiente que permite 
+criarmos um servidor Web completo utilizando JavaScript. 
+Desta forma, a linguagem ganhou grande popularidade e caiu no gosto dos desenvolvedores, tornando-se parte do coletivo imaginário de qualquer programador moderno.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A tag <script> é responsável por nos ajudar a resolver este problema. Tudo que declaramos dentro da tag <script> é interpretado como Javascript quando o navegador passar por ali.
+
+No caso abaixo:
+
+<script>
+alert("Olá mundo");
+</script>
+Quando o navegador passar pela tag abaixo ele vai interprar o texto "alert("Olá mundo");" e irá executar a função alert(), que é responsável por exibir uma pop up com a
+mensagem Olá mundo.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Propriedade textContent do HTML DOM.
+
+Definição e Uso
+A propriedade textContent define ou retorna o conteúdo de texto do nó especificado e todos os seus descendentes .
+
+Se você definir a propriedade textContent, quaisquer nós filhos serão removidos e substituídos por um único nó de Texto que contém a cadeia especificada.
+
+Nota: Essa propriedade é semelhante à innerText , no entanto, existem algumas diferenças:
+
+textContent retorna o conteúdo do texto de todos os elementos, enquanto innerText retorna o conteúdo de todos os elementos, exceto os elementos <script> e <style>.
+innerText não retornará o texto dos elementos ocultos com CSS (textContent will). 
+Dica: Às vezes, essa propriedade pode ser usada em vez da propriedade nodeValue , mas lembre-se de que essa propriedade retorna o texto de todos os nós filhos também.
+
+Dica: Para definir ou retornar o conteúdo HTML de um elemento, use a propriedade innerHTML .
+
+Obtenha o conteúdo do elemento <p> acima com as propriedades especificadas:
+
+innerText retorna: "Este elemento possui espaçamento extra e contém um elemento de extensão."
+innerHTML retorna: "Este elemento possui espaçamento extra e contém <span> um elemento de extensão </span>."
+textContent retorna: "Este elemento possui espaçamento extra e contém um elemento de extensão."
+
+A propriedade innerText retorna apenas o texto, sem espaçamento e tags de elemento interno.
+A propriedade innerHTML retorna o texto, incluindo todas as marcas de espaçamento e elemento interno.
+A propriedade textContent retorna o texto com espaçamento, mas sem tags de elemento interno.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O console do desenvolvedor é uma ferramenta muito poderosa e versátil para o desenvolvedor Javascript. Com ele conseguimos rapidamente ser notificados de possíveis erros 
+em nosso código, podemos executar funções, observar a saída de algumas funções e executar pequenos testes das funcionalidades do Javascript de modo rápido.
+
+É uma boa prática sempre que estivermos testando nosso site ficar com o console aberto, para ficar monitorando possíveis erros em nosso código.
+
+Como utilizar o console é algo bastante corriqueiro, podemos nos aproveitar dos atalhos CTRL + SHIFT + J (Win/Linux) ou CMD + ALT + J (Google Chrome no Mac. No Safari, 
+o atalho é CONTROL + ALT + C, com o menu "Develop" ativado) para ter acesso ao console de modo rápido.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Sobre o DOM EM JS.
+
+O document é uma variável muito importante do Javascript. Ela contém o DOM ou Document Object Model, que é como o navegador enxerga o HTML utilizado por ele para renderizar a página.
+
+O navegador, ao ler o seu arquivo HTML, cria uma cópia em memória daquele HTML e a partir dessa cópia ele vai desenhando a sua página, colocando as tags 
+e aplicando os estilos. Esta cópia é o que chamamos de DOM uma representação em memória do HTML do seu arquivo, que o navegador usa para desenhar a página, e a variável document é quem contêm o DOM.
+
+Por isso, quando dizemos que com o Javascript nós estamos manipulando o DOM, estamos manipulando o que o navegador renderizou. Então ao trocar algum texto do DOM, 
+o navegador imediatamente desenha novamente aquele texto, pois o DOM é o que o navegador usa para desenhar o seu site.
+
+Outra caracteristica interessante, é que como manipulamos o DOM , quando trocamos um texto de um <h1> ou um estilo de um elemento, na verdade estamos alterando a 
+representação em memória , o que faz com que o arquivo fonte que contêm seu HTML fique intacto!
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sobre o querySelector(): https://www.w3schools.com/jsref/met_document_queryselector.asp
+
+Sabemos que o document contém a representação de todo o HTML da nossa página, porém na maioria dos casos 
+estamos interessados em apenas uma parte do HTML, e não nele todo.
+
+Qual função podemos utilizar na variável document para especificar que queremos trazer apenas uma parte do HTML ?
+
+Alternativa correta
+
+document.querySelector();
+
+Quando desejamos pegar apenas parte do HTML, devemos utilizar a função querySelector(). A função querySelector faz a busca através de
+seletores CSS para trazer o HTML que você está interessado. Por exemplo, no caso abaixo:
+
+<h1 class="titulo"> Meu primeiro site</h1>
+Podemos buscar este <h1> passando o seletor CSS correto para a função querySelector. Utilizando o seletor de tag, podemos buscar assim:
+
+document.querySelector("h1");
+E utilizando um seletor CSS de classe, ficaria assim:
+
+document.querySelector(".titulo");
+Neste caso, ambas as funções retornariam o h1. Ter domínio dos seletores CSS é importante se você deseja trabalhar bem com o Javascript!
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Apesar deste capítulo inicial ter sido curto, aprendemos pontos importantes como:
+
+Separar a organização de nosso código em arquivos .js
+Importar arquivos .js sempre ao final do body
+A representação do HTML pela variável document
+A função que faz busca querySelector()
+Preferir selecionar por #id ou .classe
+No próximo avançaremos mais em nossos conhecimentos de Javascript

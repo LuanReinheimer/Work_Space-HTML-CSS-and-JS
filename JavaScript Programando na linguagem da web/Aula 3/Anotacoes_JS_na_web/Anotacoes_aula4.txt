@@ -1,0 +1,173 @@
+JavaScript: Programando na linguagem da web
+
+Para mais teoria : https://www.w3schools.com/js/default.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O Javascript possuí dois tipos de funções, as funções anônimas e as funções nomeadas.
+
+As funções nomeadas, como o próprio nome diz, são as funções que levam um nome em sua criação e que podem ser invocadas posteriormente, como a função mostraMensagem:
+
+function mostraMensagem(){
+    console.log("Fui clicado");
+}
+Já as funções anônimas, são funções que não tem nome e só são chamadas no contexto aonde foram declaradas. Elas são muito usadas em conjunto com a função addEventListener(), 
+onde normalmente a ação que desejamos chamar só deve ser chamada naquele local.
+
+titulo.addEventListener("click", function(){
+    console.log("Fui clicado");
+});
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A função responsável por criar elementos no Javascript é a createElement().Com ela passamos o nome da tag que queremos criar e ela nos retorna um objeto HTML 
+que pode ser alterado com as propriedades do Javascript, como a .textContent e a .classList.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O método addEventListener() : https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+Exemplo;
+
+Adicione um ouvinte de evento que é acionado quando um usuário clica em um botão:
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+- O addEventListener() método anexa um manipulador de eventos ao elemento especificado.
+- O addEventListener() método anexa um manipulador de eventos a um elemento sem substituir os manipuladores de eventos existentes.
+- Você pode adicionar muitos manipuladores de eventos a um elemento.
+- Você pode adicionar muitos manipuladores de eventos do mesmo tipo a um elemento, ou seja, dois eventos de "clique".
+- Você pode adicionar ouvintes de eventos a qualquer objeto DOM, não apenas aos elementos HTML. ou seja, o objeto da janela.
+- O addEventListener() método facilita o controle de como o evento reage à bolha.
+- Ao usar o addEventListener() método, o JavaScript é separado da marcação HTML, para melhor legibilidade e permite adicionar ouvintes de eventos 
+mesmo quando você não controla a marcação HTML.
+- Você pode remover facilmente um ouvinte de eventos usando o removeEventListener()método
+
+Sintaxe;
+element.addEventListener(event, function, useCapture);
+-O primeiro parâmetro é o tipo do evento (como " click" ou " mousedown" ou qualquer outro evento HTML DOM .)
+-O segundo parâmetro é a função que queremos chamar quando o evento ocorrer.
+-O terceiro parâmetro é um valor booleano que especifica se o bubbling ou a captura de eventos devem ser usados. Este parâmetro é opcional.
+
+Observe que você não usa o prefixo "on" para o evento; use " click" em vez de " onclick".
+
+
+Adicionar um manipulador de eventos a um elemento:
+
+Você também pode se referir a uma função externa "anonima";
+Exemplo;
+
+Alerta "Olá, mundo!" quando o usuário clica em um elemento.
+
+
+element.addEventListener("click", function(){ alert("Hello World!"); });
+
+=============================================================================
+
+Você também pode se referir a uma função externa "nomeada":
+Exemplo;
+
+Alerta "Olá, mundo!" quando o usuário clica em um elemento:
+
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Neste capítulo implementamos a criação de usuários a partir de um formulário, e com isso aprendemos:
+
+A diferença entre as funções nomeadas e as funções anônimas
+A escutar eventos do browser com a função addEventListener()
+Que a função criadora de elementos é .createElement() :https://www.w3schools.com/jsref/met_document_createelement.asp
+A pegar o valor de um input por meio da propriedade .value
+A acessar os input de um form por meio da propriedade _name_.
+A adicionar elementos na página e dentro de outros elementos com a função appendChild() :https://www.w3schools.com/jsref/met_node_appendchild.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<<<EXTRA>>> Para saber mais: event shortcut.
+
+Vejamos o seguinte exemplo de código:
+
+<button id="botao">clique-me</button>
+<script>
+
+    var botao = document.querySelector('#botao');
+
+    function botaoHandler() {
+
+        alert('Botão clicado');
+    }
+
+    botao.addEventListener('click', botaoHandler);
+</script>
+Nele associamos uma função ao evento click, aquele disparado toda vez que o elemento for clicado, em nosso caso, um botão. 
+A vantagem do addEventListener é que podemos executar mais de uma função para o mesmo evento. Vejamos:
+
+<button id="botao">clique-me</button>
+<script>
+
+    var botao = document.querySelector('#botao');
+
+    function botaoHandler() {
+
+        alert('Botão clicado');
+    }
+
+     function outroHandler() {
+
+        alert('Botão clicado também!');
+    }
+
+
+    botao.addEventListener('click', botaoHandler);
+    botao.addEventListener('click', outroHandler);
+</script>
+
+Nesse caso, temos uma fila de eventos, na qual o primeiro adicionado na fila será executado e o segundo em seguida. No entanto, 
+quando desejamos executar apenas uma única função por evento, podemos escrever o código da seguinte forma usando um event shortcut:
+
+<button id="botao">clique-me</button>
+<script>
+
+    var botao = document.querySelector('#botao');
+
+    function botaoHandler() {
+
+        alert('Botão clicado');
+    }
+
+     function outroHandler() {
+
+        alert('Botão clicado também!');
+    }
+
+
+    botao.onclick = botaoHandler;
+</script>
+
+Para cada evento existente no JavaScript, há a propriedade on + nomeDoEvent. No caso, temos onclick para o evento click, onmouseover 
+para o evento mouseover e assim por diante. Nesse caso, a função que desejamos executar é atribuída direto na propriedade. No entanto, 
+essa forma tem uma limitação, como estamos guardando a função em uma propriedade, se adicionarmos outra função, essa sobrescreverá a anterior. Vejamos:
+
+<button id="botao">clique-me</button>
+<script>
+
+    var botao = document.querySelector('#botao');
+
+    function botaoHandler() {
+
+        alert('Botão clicado');
+    }
+
+     function outroHandler() {
+
+        alert('Botão clicado também!');
+    }
+
+
+    botao.onclick = botaoHandler;
+    botao.onclick = outroHandler; // substitui botaoHandler
+</script>
+Sendo assim, a boa prática é trabalhar com addEventListener() mesmo que você só queira adicionar um único evento. Porque mais tarde, se outro 
+desenvolvedor quiser adicionar outro evento para o mesmo elemento, não corremos o risco de substituir a função já associada por outra.

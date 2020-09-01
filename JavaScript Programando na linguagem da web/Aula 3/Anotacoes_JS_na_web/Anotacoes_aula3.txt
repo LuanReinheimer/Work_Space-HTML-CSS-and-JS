@@ -1,0 +1,59 @@
+JavaScript: Programando na linguagem da web
+
+Para mais teoria : https://www.w3schools.com/js/default.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Definição e Uso: https://www.w3schools.com/jsref/met_document_queryselectorall.asp
+O método querySelectorAll () retorna todos os elementos no documento que correspondem aos seletores CSS especificados, como um objeto estático NodeList.
+
+O objeto NodeList representa uma coleção de nós. Os nós podem ser acessados ​​por números de índice. O índice começa em 0.
+
+Dica: Você pode usar a propriedade length do objeto NodeList para determinar o número de elementos que corresponde ao seletor especificado. 
+Em seguida, você pode percorrer todos os elementos e extrair as informações desejadas.
+
+Para obter mais informações sobre seletores CSS, visite nosso Tutorial sobre seletores CSS e nossa referência sobre seletores CSS .
+
+Ele permite trazer uma lista mais de um item do css ou html atravez da classe desejada.
+Utilizar a função querySelectorAll(), que retornar um array com todo mundo que atende critério de seleção.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Método toFixed () do JavaScript
+
+Exemplo
+Converta um número em uma string, arredondando o número para manter apenas duas casas decimais:
+
+var num = 5.56789;
+var n = num.toFixed(2);
+Mais exemplos de "Experimente você mesmo" abaixo.
+
+Definição e Uso
+O método toFixed () converte um número em uma seqüência de caracteres, arredondando para um número especificado de casas decimais.
+
+Nota: se o número desejado de casas decimais for maior que o número real, zeros serão adicionados para criar o comprimento decimal desejado.
+				
+Sintaxe
+number.toFixed(x)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Qual propriedade abaixo nos dá acesso à lista das classes de um HTML selecionado pela função querySelectorAll?
+
+.classList
+
+.classList é a única das opções que existe no JavaScript!
+
+Quando selecionamos um elemento com as funções de querySelector, elas nos devolvem um objeto que tem algumas propriedades especiais, que falam sobre as características do 
+HTML selecionado. Uma dessas propriedades é a .classList, que como o nome indica nos mostras classes que aquele HTML tem.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Neste capítulo aprendemos a lidar uma coleção de elementos do HTML e vimos:
+
+Como selecionar diversos elementos com a função querySelectorAll()
+Relembramos um método clássico de iteração com o for
+Vimos como manipular estilos com a propriedade .style
+Vimos que devemos utilizar camelCase quando queremos modificar uma propriedade que tenha duas palavras, como a background-color
+A boa prática de não alterar o estilo diretamente no Javascript e sim modificar as classes dos elementos com a propriedade .classList
+
+

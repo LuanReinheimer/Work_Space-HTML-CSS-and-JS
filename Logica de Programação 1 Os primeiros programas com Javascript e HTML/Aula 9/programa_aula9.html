@@ -1,0 +1,58 @@
+<!--Continuaremos a trabalhar com o programa advinha_mais.html, como na aula anterior. 
+Nosso programa faz uma comparação entre aquilo que o usuário digita no campo de input e o segredo estabelecido em nosso código. Ao rodar, ele processa uma série de instruções:
+
+Em primeiro lugar, ele gera um número aleatório dentro da variável segredo;
+Em seguida, ele busca o input do mundo HTML para o JavaScript, fazendo com que o campo de texto ganhe foco, em razão do input.focus();
+
+Posteriormente, declaramos a função verifica(), a qual recebe o valor digitado pelo usuário no input e o compara com o segredo. 
+Se correto, é exibido o alerta "Você acertou", caso contrário, surge um alerta com a mensagem "Você errou!";
+
+Acertando ou errando, o campo de texto é limpo sempre que um número é digitado, e é exibido um pop up. Além disso, este campo limpo também ganha foco; e
+
+Como queremos que a função seja executada somente ao clique do botão, criamos uma variável button, que busca esta funcionalidade do mundo HTML, e a associamos ao clique, por meio de onclick.
+Nossa intenção agora é aumentar as chances de acerto para o usuário-->
+
+
+
+
+<meta charset="UTF-8">
+
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+    var segredos = [5,7,10,2,3]; // Criado o Array com 5 elementos onde se inicia em 0
+
+    var input = document.querySelector("input"); // Pega o input do mundo HTML e traz para o mundo JS.
+        input.focus(); // Ja ganhando o foco do usuario ao digitar.
+
+    function verifica() { // Delarada a funcao verifica ...
+
+            var achou = false; // variavel criada quando a conficao de dentro do "for" for verdadeira para ela virar True senão vira false como no codigo.
+
+            for(var posicao = 0; posicao < segredos.length; posicao++) { //loop criado para verificar cada elemento do Array criado
+
+                if(input.value == segredos[posicao]) {
+                    alert("Você ACERTOU!");
+                    achou = true;
+                    break; // se for verdadeiro quebra o looping 
+        } 
+            }
+
+                                if(achou == false) {
+
+                                    alert("Você ERROU!");
+                                }
+
+                                input.value = "";
+                input.focus(); // Ganha o foco do usuario depois de digitar na caixa de texto.
+
+    }
+
+    var button = document.querySelector("button"); // Pega o button do mundo HTML e traz para o mundo JS e associa a funcao "verifica" no ato de clickar com o "button.onclick"
+
+    button.onclick = verifica;
+
+</script>

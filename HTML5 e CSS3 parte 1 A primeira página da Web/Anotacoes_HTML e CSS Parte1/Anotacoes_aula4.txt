@@ -1,0 +1,93 @@
+HTML5 e CSS3 parte 1: A primeira página da Web
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Imagens HTML.
+As imagens podem melhorar o design e a aparência de uma página da web.
+
+Sintaxe de imagens HTML
+Em HTML, as imagens são definidas com a <img>tag.
+
+A <img>tag está vazia, contém apenas atributos e não possui uma tag de fechamento.
+
+O srcatributo especifica o URL (endereço da web) da imagem:
+
+<img src="url">
+
+Podemos tambem adicionar imagens que estao em sua maquina desta maneira.
+
+<img src="Caminho da imagem">
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O atributo alt.
+O altatributo fornece um texto alternativo para uma imagem, se por algum motivo o usuário não puder visualizá-la (devido a uma conexão lenta, um erro no atributo src ou se o usuário usar um leitor de tela).
+
+O valor do altatributo deve descrever a imagem:
+
+Exemplo
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+Se um navegador não conseguir encontrar uma imagem, ele exibirá o valor do alt atributo:
+Nota: O altatributo é obrigatório. Uma página da web não será validada corretamente sem ela.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HTML O atributo id : https://www.w3schools.com/html/html_id.asp
+
+Usando o atributo id
+O idatributo especifica um ID exclusivo para um elemento HTML (o valor deve ser exclusivo no documento HTML).
+
+O valor do ID pode ser usado por CSS e JavaScript para executar determinadas tarefas para o elemento com o valor específico do ID.
+
+No CSS, para selecionar um elemento com um ID específico, escreva um caractere de hash (#), seguido pelo ID do elemento:
+
+Exemplo
+Use CSS para estilizar um elemento com o ID "myHeader":
+
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+
+<h1 id="myHeader">My Header</h1>
+
+Dica: O atributo id pode ser usado em qualquer elemento HTML.
+
+Nota: O valor do ID diferencia maiúsculas de minúsculas.
+
+Nota: O valor do ID deve conter pelo menos um caractere e não deve conter espaços em branco (espaços, guias, etc.).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Atributos de largura e altura
+ As imagens HTML também têm width e height atributos, que especificam a largura e a altura da imagem:
+
+Exemplo
+<img src="img_girl.jpg" width="500" height="600">
+A largura e a altura são especificadas em pixels por padrão; então width = "500" significa 500 pixels de largura
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Resumo do capítulo
+Use o <img>elemento HTML para definir uma imagem
+Use o srcatributo HTML para definir o URL da imagem
+Use o altatributo HTML para definir um texto alternativo para uma imagem, se ela não puder ser exibida
+Use o HTML widthe os heightatributos para definir o tamanho da imagem
+Use o CSS widthe as heightpropriedades para definir o tamanho da imagem (como alternativa)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nesta aula, aprendemos:
+
+Como reestruturar o nosso código, removendo os CSS inline e colocando-os no arquivo CSS externo
+Como criar um identificador para marcar especificamente um elemento
+Como fazer referência a esse identificador no CSS
+Como adicionar uma imagem à nossa página
+Como ajustar a altura do elemento, através da propriedade height
+Como ajustar a largura do elemento, através da propriedade width
+Como ajustar o espaçamento interno do elemento, através da propriedade padding
+Como ajustar o espaçamento externo do elemento, através da propriedade margin
+Como se comporta um time de front-end hoje em dia

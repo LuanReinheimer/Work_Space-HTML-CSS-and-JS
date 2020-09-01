@@ -1,0 +1,56 @@
+<!--Mais uma vez, vamos revisar um código que já fizemos em um dos exercícios anteriores. 
+É aquele que aumenta o tamanho da bolinha caso a tecla SHIFT esteja pressionada quando um clique na tela for realizado.
+
+Você deve ter ficado tão incomodado quanto eu, porque a bolinha só cresce até tomar conta da tela inteira. Uma das coisas que podemos melhorar 
+é limitar o tamanho de crescimento das bolinhas, ou seja, quero combinar com você que o raio não pode ultrapassar 40. Além disso, se o usuário 
+clicar na tela com a tecla ALT pressionada, o raio deve diminuir 5. Para saber se a tecla ALT está pressionada, fazemos evento.altKey. ATENÇÃO: 
+o decremento do raio deverá ser de 5 em 5 e o tamanho mínimo da bolinha deve ser de 10 que é o tamanho original.-->
+
+
+
+<!--Vamos analisar uma solução, ainda um pouco bruta. Nela, usamos o clássico if para saber se as teclas estão pressionadas, 
+além disso usamos o operador && para verificar se SHIFT e ALT estão sendo pressionadas ao mesmo tempo.-->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var raio = 10;
+
+    function desenhaCirculo(evento) {
+
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
+
+        console.log(x + ',' + y);
+
+        if (evento.shiftKey && evento.altKey) {
+
+            alert('Só aperte uma tecla por vez, por favor!');
+
+        } else if(evento.shiftKey && raio + 10 <= 40) {
+            raio = raio + 10;
+
+        } else if(evento.altKey && raio - 5 >= 10) {
+            raio = raio - 5;
+
+        }
+
+        pincel.fillStyle = 'blue';
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * 3.14);
+        pincel.fill();
+
+    }
+
+    tela.onclick = desenhaCirculo;
+
+</script>
+
+<!--Um ponto a destacar é que antes de incrementarmos ou decrementarmos o raio, fazemos uma simulação aumentando ou 
+diminuindo o raio sem guardar o resultado na variável. Esse preview do valor nos ajuda a saber se podemos continuar aumentado ou diminuindo o raio.-->

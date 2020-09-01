@@ -1,0 +1,16 @@
+JavaScript: Programando na linguagem da web
+
+Para mais teoria : https://www.w3schools.com/js/default.asp e https://developer.mozilla.org/en-US/docs/Web/Events
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+No último vídeo do capítulo, vimos como criar uma regex, utilizando new RegExp(..). Quais são os parâmetros que podemos passar para o construtor?
+O primeiro parâmetro é o padrão (o texto da expressão regular, o que deve ser buscado) e o segundo parâmetro são uma ou mais flags 
+(representando como queremos que a expressão regular busque).
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Neste capítulo aprendemos:
+
+O novo evento de input
+O truque de deixar invisível adicionando uma classe com display:none
+Como realizar uma busca, escondendo todos os elementos e mostrando apenas aqueles que nos interessam
+Como buscar por apenas um pedaço de uma palavra com as Expressões Regulares em Javascript

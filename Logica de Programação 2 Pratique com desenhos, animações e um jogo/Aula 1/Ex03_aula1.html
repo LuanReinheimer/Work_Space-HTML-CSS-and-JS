@@ -1,0 +1,48 @@
+<!--Que tal desenhar a nossa bandeira? Tirando as estrelas e o dizer "Ordem e Progresso", sabemos tudo para desenhar a bandeira do Brasil:
+
+
+Talvez você esteja pensando que não aprendemos a criar um losango, mas repare que o losango amarelo pode ser representado através de dois triângulos:
+
+
+Ou seja, temos um retângulo verde (green), dois triângulos amarelos (yellow) e um circulo azul escuro (darkblue)-->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<!-- esquadro.html -->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext('2d');
+
+    // criando o fundo
+    pincel.fillStyle = 'green';
+    pincel.fillRect(0, 0, 800, 600);
+
+    //criando os doi triangulos
+    pincel.fillStyle='yellow';
+    pincel.beginPath();
+    pincel.moveTo(300, 50);
+    pincel.lineTo(50, 200);
+    pincel.lineTo(550, 200);
+    pincel.fill();
+
+    pincel.beginPath();
+    pincel.moveTo(300, 350);
+    pincel.lineTo(50, 200);
+    pincel.lineTo(550, 200);
+    pincel.fill();
+
+    //criando o circulo
+    pincel.fillStyle = 'darkblue';
+    pincel.beginPath();
+    pincel.arc(300, 200, 100, 0, 2 * Math.PI);
+    pincel.stroke();
+    pincel.fill();
+</script>
+
+</body>
+</html>

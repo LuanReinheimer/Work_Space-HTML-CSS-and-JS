@@ -1,0 +1,64 @@
+<!--Nesta aula aprenderemos a criar um jogo com mais complexidade.
+
+Como podemos observar, na tela branca temos apenas a imagem de um alvo vermelho, 
+formado por três círculos, uma esfera vermelha central, um círculo branco exterior, e por fim, um círculo vermelho.-->
+
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var raio = 10;
+
+    /*Para darmos início à elaboração de nosso jogo, temos que começar pelo desenho do alvo.
+    Este objeto é construído pela função desenhaCirculo(), que já temos em nosso código:*/
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+
+    }
+    // funcao de limpar a tela sempre que gerar um novo desenho.
+    function limpaTela() {
+
+        pincel.clearRect(0, 0, 600, 400);
+    }
+
+    // Criar o ALVO
+    function desenhaAlvo(x, y){
+
+        desenhaCirculo(x, y, raio+20, "gold");
+        desenhaCirculo(x, y, raio+10, "white");
+        desenhaCirculo(x, y, raio, "gold");
+    }
+
+    // Gerar as coordenadas aleatoriamente para passar para a funcao desenhaAlvo.
+    function sorteiaPosicao(maximo){
+
+        return Math.floor(Math.random() * maximo)
+
+    }
+
+    // Para desenhar o alvo de tempo em tempo na tela automaticamente.
+    function atualizaTela(){
+        
+        limpaTela();
+        var xAleatorio = sorteiaPosicao(600);
+        var yAleatorio = sorteiaPosicao(400);
+
+        desenhaAlvo(xAleatorio, yAleatorio);
+    }
+
+    // utilizaremos o setInterval(), com os parâmetros atualizaTela e o intervalo de tempo.
+    setInterval(atualizaTela, 1000);
+
+
+</script>

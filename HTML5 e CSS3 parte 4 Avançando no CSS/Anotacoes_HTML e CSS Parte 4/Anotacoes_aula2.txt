@@ -1,0 +1,44 @@
+HTML5 e CSS3 parte 4: Avançando no CSS
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iframes HTML : https://www.w3schools.com/html/html_iframe.asp
+
+Um iframe HTML é usado para exibir uma página da web dentro de uma página da web.
+
+Sintaxe Iframe
+Um iframe HTML é definido com a <iframe>tag:
+
+<iframe src="URL"></iframe>
+O srcatributo especifica o URL (endereço da Web) da página de quadro embutido.
+
+Iframe - definir altura e largura
+Use os atributos heighte widthpara especificar o tamanho do iframe.
+
+A altura e a largura são especificadas em pixels por padrão:
+
+Exemplo
+<iframe src="demo_iframe.htm" height="200" width="300"></iframe>
+Ou você pode usar CSS para definir a altura e a largura do iframe:
+
+Exemplo
+<iframe src="demo_iframe.htm" style="height:200px;width:300px;"></iframe>
+Iframe - Remover a borda
+Por padrão, um iframe tem uma borda ao redor.
+
+Para remover a borda, adicione o styleatributo e use a borderpropriedade CSS :
+
+Exemplo
+<iframe src="demo_iframe.htm" style="border:none;"></iframe>
+Com o CSS, você também pode alterar o tamanho, estilo e cor da borda do iframe:
+
+Exemplo
+<iframe src="demo_iframe.htm" style="border:2px solid red;"></iframe>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nesta aula, aprendemos:
+
+A utilizar fontes externas nas nossas páginas
+Como incorporar um mapa à nossa página
+Como incorporar um vídeo à nossa página

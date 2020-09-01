@@ -1,0 +1,58 @@
+<!--Aplicaremos nossos conhecimentos de lógica de programação para animarmos uma esfera na tela, e termos ferramentas para conseguirmos criar um jogo simples.
+
+A primeira coisa a fazer é criar uma esfera na tela -->
+
+
+
+<canvas width="600"  height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas'); // Cria uma tela canvas.
+    var pincel = tela.getContext('2d'); // Cria um pincel.
+
+    pincel.fillStyle = 'grey'; // Diz que a tela tem o fundo sinza.
+    pincel.fillRect(0, 0, 600, 400); // Desenha o tamanho do canvas.
+
+
+    function desenhaCirculo(x, y, raio){ // Funcao de criar um circulo.
+
+        pincel.fillStyle = 'blue'; // Definindo a cor de todos os circulos criado pela funcao.
+        pincel.beginPath(); // Metodo para começar a desenhar no canvas.
+        pincel.arc(x, y, raio, 0, 2 * Math.PI); // Escolhendo uma posisao dentro do canvas para plotar o circulo.
+        pincel.fill(); // Printa na tela o circulo
+
+
+    }
+    function limpaTela() {
+        pincel.clearRect(0, 0, 600, 400);
+    }
+
+    var x = 20; // o importante é que seja declarado fora da função atualizaTela.
+    var sentido = 1; //Ela começará com o valor 1, indicando que nossa variável x deve ser incrementada de 1 em 1. Quando x for maior que 600, sentido receberá -1, o que fará o decremento da variável x
+
+    // Dentro da função atualizaTela, antes de desenharmos nossa bolinha, vamos verificar se precisamos alterar o valor de sentido
+    // Agora que sempre verificamos se sentido precisa ser alterado, logo depois de desenharmos nosso círculo, vamos usar o valor da nossa variável na hora do incremento de x:
+    function atualizaTela() {
+    // Limpamos sempre a tela para podermos desenhar um novo círculo
+        limpaTela();
+        
+        if( x > 600) {
+            sentido = -1
+        } else if (x < 0) {
+            sentido = 1;
+        } 
+
+        desenhaCirculo(x, 20, 10);
+        x = x + sentido;
+    }
+
+    setInterval(atualizaTela, 10);
+
+</script>
+<!--Recapitulando:
+
+O método setInterval() chama atualizaTela();
+Este, quando executado, faz o limpaTela(), desenhaCirculo() e incrementa o valor de x;
+O setInterval() aguarda 20 milisegundos, para repetir o processo, sempre incrementando o valor de x, 
+o que faz com que nossa esfera "se mova" para a direita.-->

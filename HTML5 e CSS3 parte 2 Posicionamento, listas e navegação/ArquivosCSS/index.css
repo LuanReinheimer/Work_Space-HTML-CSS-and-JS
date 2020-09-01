@@ -1,0 +1,67 @@
+/* Pincipal ------------------------------------------------------------------------------------------*/
+
+/* Ediçao de tudo que esta no <body> */
+
+/*body {
+
+}*/
+
+/* Ediçao da classe principal dentro da DIV */
+.principal{
+    background-color: gray;
+    text-align: center;
+    padding: 30px;
+
+}
+
+/* Ediçao do titulos principal no header */
+.titulo-principal{
+    padding-left: 20px;
+
+}
+
+/* Ediçao dos titulos centralizados */
+.titulo-centralizado {
+    text-align: center;
+}
+
+
+/* Ediçao apenas do ID dentro do DIV */
+#missao {
+    color: rgb(189, 2, 2);
+    font-size: 18px;
+  }
+
+/* Ediçao da classe imagem principal do banner do site */
+.banner1 {
+    width: 100%;
+
+}
+
+/* Ediçoes da lista ------------------------------------------------------------------------------------------*/
+
+/* Ediçao da classe dentro do DIV */
+.beneficios{
+    background-color: white;
+    padding: 20px;
+
+}
+
+/* Ediçao da lista Ul*/
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+/* Ediçao da classe itens criada na lista Ul */
+.itens {
+    font-style: italic;
+}
+
+/* Ediçao da classe imagem adicionada na lista */
+.imagembeneficios{
+    width: 50%;
+
+}

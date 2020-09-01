@@ -1,0 +1,62 @@
+Lógica de programação I Os primeiros passos com Js e HTML.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Arrays JavaScript são usadas para armazenar vários valores em uma única variável.
+
+Exemplo
+var cars = ["Saab", "Volvo", "BMW"];
+
+Uma Array é uma variável especial, que pode conter mais de um valor por vez.
+
+Se você tiver uma lista de itens (uma lista de nomes de carros, por exemplo), o armazenamento dos carros em variáveis ​​únicas pode ter a seguinte aparência:
+
+var car1 = "Saab";
+var car2 = "Volvo";
+var car3 = "BMW";
+No entanto, e se você quiser percorrer os carros e encontrar um específico? E se você não tivesse 3 carros, mas 300?
+
+A solução é uma matriz!
+
+Uma matriz pode conter muitos valores com um único nome e você pode acessar os valores consultando um número de índice.
+
+Criando uma matriz
+Usar um literal de matriz é a maneira mais fácil de criar uma matriz JavaScript.
+
+Sintaxe:
+
+var array_name = [item1, item2, ...];  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nota: Os índices da matriz começam com 0.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OBS: [0] é o primeiro elemento. [1] é o segundo elemento.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A propriedade length:
+A length propriedade de uma matriz retorna o comprimento de uma matriz (o número de elementos da matriz).
+
+Exemplo
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.length;   // the length of fruits is 4
+A lengthpropriedade é sempre mais um que o índice mais alto da matriz.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Acessando o primeiro elemento de matriz:
+Exemplo
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+var first = fruits[0]; 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Adicionando elementos de matriz
+A maneira mais fácil de adicionar um novo elemento a uma matriz é usando o push()método:
+
+Exemplo
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Lemon");    // adds a new element (Lemon) to fruits
+
+Novo elemento também pode ser adicionado a uma matriz usando a length propriedade:
+
+Exemplo
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Lemon";    // adds a new element (Lemon) to fruits
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ATENÇÃO !
+Adicionar elementos com índices altos pode criar "buracos" indefinidos em uma matriz:
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

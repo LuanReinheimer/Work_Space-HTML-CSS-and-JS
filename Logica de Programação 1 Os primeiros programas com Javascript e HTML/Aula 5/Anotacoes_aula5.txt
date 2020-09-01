@@ -1,0 +1,28 @@
+﻿Lógica de programação I Os primeiros passos com Js e HTML.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Em JS quando fazemos uma operação com INT e o resultado é NaN.
+Isso significa "not a number", ou seja, "não é um número". 
+Algum elemento da operação ficou indefinido e fez com que a operação não fosse bem sucedida. Sempre que fazemos uma operação matemática com valores não definidos
+temos este resultado, NaN.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A função prompt é a primeira forma que aprendemos para capturar a entrada do usuário.
+Lemos prompt() sempre como um texto (STRING).
+
+prompt()
+
+Trata-se de uma função do JavaScript, que receberá como parâmetro a pergunta que desejamos fazer ao usuário, no caso, "Informe sua altura":
+
+prompt("Informe sua altura");
+Pressionaremos a tecla "Enter", e surgirá um pop up com a frase "Informe sua altura" e um espaço em branco abaixo para que o usuário possa incluir suas informações
+
+Exemplo:
+<script>
+
+var nome = prompt("Informe o seu nome");
+var alturaInformada = prompt(nome + ", informe sua altura");
+var pesoInformado = prompt(nome + ", informe seu peso");
+
+</script>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

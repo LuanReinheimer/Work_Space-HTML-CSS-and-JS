@@ -1,0 +1,88 @@
+﻿HTML5 e CSS3 parte 2: Posicionamento, listas e navegação
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Links HTML
+Os links são encontrados em quase todas as páginas da web. Os links permitem que os usuários cliquem no caminho de uma página para outra.
+Exemplo:
+<ul>
+    <li><a href="index.html">Home </a></li>
+    <li><a href="produtos.html">Produtos</a></li>
+    <li><a href="contatos.html">Contatos</a></li>
+</ul>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Links HTML - Hiperlinks
+Links HTML são hiperlinks.
+
+Você pode clicar em um link e pular para outro documento.
+
+Quando você move o mouse sobre um link, a seta do mouse se transforma em uma pequena mão.
+
+Nota: Um link não precisa ser texto. Pode ser uma imagem ou qualquer outro elemento HTML.
+
+Links HTML - Sintaxe
+Os hiperlinks são definidos com a <a>tag HTML :
+
+<a href="url">link text</a>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tag HTML <nav>: https://www.w3schools.com/tags/tag_nav.asp
+
+Exemplo
+Um conjunto de links de navegação:
+
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+
+Definição e Uso
+A <nav>tag define um conjunto de links de navegação.
+
+Observe que nem todos os links de um documento devem estar dentro de um <nav>elemento. O <nav>elemento é destinado apenas ao bloco principal de links de navegação.
+
+Navegadores, como leitores de tela para usuários desabilitados, podem usar esse elemento para determinar se deve omitir a renderização inicial desse conteúdo.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Definições de uso do CSS nesta aula.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A font-size propriedade define o tamanho de uma fonte. https://www.w3schools.com/cssref/pr_font_font-size.asp
+
+Exemplo:
+div.a {
+  font-size: 15px;
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A background-color propriedade define a cor de fundo de um elemento. https://www.w3schools.com/cssref/pr_background-color.asp
+
+O plano de fundo de um elemento é o tamanho total do elemento, incluindo preenchimento e borda (mas não a margem).
+
+Exemplo:
+header{
+    background-color: gray;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A font-weightpropriedade define como caracteres grossos ou finos no texto devem ser exibidos. https://www.w3schools.com/cssref/pr_font_weight.asp
+
+Exemplo:
+Defina a espessura da fonte diferente para três parágrafos:
+
+p.normal {
+  font-weight: normal;
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Nesta aula, aprendemos:
+
+A criar links para outras páginas, sejam elas do nosso projeto ou páginas externas
+Um reforço aos estilos inline e block
+Como transformar o texto para ter todas as letras maiúsculas
+Como deixar o texto em negrito com CSS
+Como remover a decoração do texto

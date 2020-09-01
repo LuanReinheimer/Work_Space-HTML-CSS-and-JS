@@ -1,0 +1,30 @@
+HTML5 e CSS3 2.2: Turbinando as suas páginas
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Vimos que o HTML 5 incorporou algumas funcionalidades para melhorar a usabilidade de formulários, que antes precisavam de JavaScript para serem implementadas. Vamos aproveitar a facilidade de uso dessas funcionalidades para melhorar nosso formulário de contato.
+
+Adicione, então, as seguintes funcionalidades ao nosso formulário de contato:
+
+Foco do teclado automático no campo "Nome" assim que a página carregar.
+Obrigatoriedade de preencher os campos "Nome" e "E-mail".
+Mensagens explicativas sobre os campos "E-mail" e "Mensagem".
+
+Para tornar o campo "Nome" obrigatório e fazer o cursor do teclado já estar nele assim que a página carregar, 
+adicionamos os atributos required e autofocus nele:
+
+<input id="nome" type="text" name="nome-contato" required autofocus>
+
+Para o campo "E-mail", queremos que ele seja obrigatório e tenha uma mensagem explicativa. Para a mensagem explicativa, 
+usamos o atributo placeholder:
+
+<input id="email" type="email" name="email-contato" required placeholder="Digite seu e-mail">
+
+Para adicionar uma mensagem explicativa no campo "Mensagem", usamos novamente o atributo placeholder:
+
+<textarea id="mensagem" name="msg" placeholder="Digite aqui sua mensagem"></textarea>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

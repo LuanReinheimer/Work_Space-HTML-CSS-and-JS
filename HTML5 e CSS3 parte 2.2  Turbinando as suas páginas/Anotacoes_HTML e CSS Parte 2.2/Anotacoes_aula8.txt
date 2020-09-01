@@ -1,0 +1,21 @@
+HTML5 e CSS3 2.2: Turbinando as suas páginas
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Pseudo-classes CSS: https://www.w3schools.com/css/css_pseudo_classes.asp
+O que são pseudo-classes?
+Uma pseudo-classe é usada para definir um estado especial de um elemento.
+
+Por exemplo, ele pode ser usado para:
+
+Estilize um elemento quando um usuário passar o mouse sobre ele
+Estilo de links visitados e não visitados de maneira diferente
+Estilize um elemento quando ele receber foco
+
+Sintaxe
+A sintaxe das pseudo-classes:
+
+selector:pseudo-class {
+  property: value;
+}

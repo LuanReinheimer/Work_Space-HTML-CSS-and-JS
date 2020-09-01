@@ -1,0 +1,81 @@
+<!--Nesta parte final do nosso curso, refinaremos certos aspectos do nosso programa, como a lista de segredos, que é fixa, mas poderia ser gerada aleatoriamente-->
+
+
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+    function sorteia(){ // funcao criada para retornar o resultado do numero aleatorio que foi gerado.
+        
+        return Math.round(Math.random() * 10);
+    }
+
+    function sorteiaNumero(quantidade){ // funcao criada receber a quantidade de numeros dita para retornar uma lista de numeros aleatorio que foi gerado (Os numeros secretos).
+
+        var segredos = []; // Declarada lista vazia para receber os numeros sorteados.
+        
+        var numero = 1; //  Uma variável que nos ajudará a contabilizar quantos itens já foram sorteados
+
+        while(numero <= quantidade){
+
+            var numeroAleatorio = sorteia();
+            var achou = false;
+
+            if (numeroAleatorio !== 0) {
+                for(var posicao = 0; posicao < segredos.length; posicao++) {
+
+                        if(segredos[posicao] == numeroAleatorio){
+                            achou = true;
+                            break;
+                           }
+
+                     }
+                     if (achou == false) {
+                           segredos.push(numeroAleatorio);
+                           numero++;
+                     }
+              }
+
+        }
+
+        return segredos;
+
+    }
+
+    var segredos = sorteiaNumero(3);
+
+    var input = document.querySelector("input"); // Pega o input do mundo HTML e traz para o mundo JS.
+        input.focus(); // Ja ganhando o foco do usuario ao digitar.
+
+    function verifica() { // Delarada a funcao verifica ...
+
+            var achou = false; // variavel criada quando a conficao de dentro do "for" for verdadeira para ela virar True senão vira false como no codigo.
+
+            for(var posicao = 0; posicao < segredos.length; posicao++) { //loop criado para verificar cada elemento do Array criado
+
+                if(input.value == segredos[posicao]) {
+
+                    alert("Você ACERTOU!");
+                    achou = true;
+                    break; // se for verdadeiro quebra o looping 
+        } 
+            }
+
+                                if(achou == false) {
+
+                                    alert("Você ERROU!");
+                                }
+
+                                input.value = "";
+                input.focus(); // Ganha o foco do usuario depois de digitar na caixa de texto.
+
+    }
+
+    var button = document.querySelector("button"); // Pega o button do mundo HTML e traz para o mundo JS e associa a funcao "verifica" no ato de clickar com o "button.onclick"
+
+    button.onclick = verifica;
+
+</script>

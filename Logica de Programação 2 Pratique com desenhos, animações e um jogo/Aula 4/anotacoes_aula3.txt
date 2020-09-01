@@ -1,0 +1,6 @@
+Lógica de programação II pratique com desenhos, animações e um jogo
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Em JavaScript, existe o evento onkeydown, que permite identificar qual tecla está pressionada. Esse evento é o único capaz de identificar também as setas do teclado
+

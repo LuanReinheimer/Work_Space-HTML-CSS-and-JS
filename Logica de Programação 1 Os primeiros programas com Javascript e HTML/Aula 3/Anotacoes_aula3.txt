@@ -1,0 +1,46 @@
+﻿Lógica de programação I Os primeiros passos com Js e HTML.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+veremos como poderemos arredondar números com muitas casas decimais. Para isto, utilizamos o document, só que, para arrendondarmos, não trabalharemos com o documento, 
+e sim com a matemática, portanto é este o comando que chamaremos. Em seguida, chamaremos a função round (do inglês, "arredondar"):
+
+Math.round()
+
+Exemplo:
+
+<meta charset="UTF-8">
+<script>
+    document.write("Resultado " + Math.round(10/3) );
+</script>
+
+Veja que estamos concatenando a string "Resultado " com o resultado do arredondamento de 10/3. Veja que Math.round recebe entre seus parênteses ()
+o valor que queremos arredondar.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Aprendemos a trabalhar com variáveis, que nos facilitam a manutenção de nosso programa, e o tornam mais dinâmico.
+Em nosso programa, conseguimos este efeito de "envelope" por meio da criação de variáveis.
+Como o próprio nome sugere, elas variam, e são representadas da seguinte forma:
+
+var ano;
+
+Mas qual é o valor da variável ano? Para que ele seja recebido, utilizaremos o símbolo = (sinal de igual). 
+Em programação, não lemos = como "igual", e sim como "recebe". Definiremos então o valor como 2016:
+
+O prefixo var só é utilizado ao declararmos a variável pela primeira vez, então não é necessário utilizá-lo ao definirmos um novo valor. 
+As variáveis nos ajudam, também, a fazer a manutenção de nosso código, já que ela é declarada em um único ponto e pode ser utilizada em diversos momentos.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Vemos como poderemos arredondar números com muitas casas decimais. Para isto, utilizamos o document, só que, para arrendondarmos, não trabalharemos com o documento,
+e sim com a matemática, portanto é este o comando que chamaremos. Em seguida, chamaremos a função round (do inglês, "arredondar"):
+
+Math.round()
+
+<meta charset="UTF-8">
+<script>
+    document.write("Resultado " + Math.round(10/3) );
+</script>
+Veja que estamos concatenando a string "Resultado " com o resultado do arredondamento de 10/3. Veja que Math.round recebe entre seus parênteses () o valor 
+que queremos arredondar.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------

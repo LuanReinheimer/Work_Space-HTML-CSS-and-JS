@@ -1,0 +1,37 @@
+<!-- Nesta aula, iniciaremos um novo programa, ao qual demos o título programa3.html. É um <canvas>, de dimensão 600x400, 
+no qual utilizamos o pincel e preenchemos em cinza:
+Até então, nós havíamos trabalhado com formas geométricas, como esferas e quadrados, pensando também na organização de nosso código. 
+Nosso objetivo a partir de agora será fazer com que o nosso <canvas> interaja com o usuário.
+
+Se você pensa em seguir e construir jogos, temos que ter uma maneira de interagir com o usuário. Ele deve ser capaz de clicar no <canvas> e isso dar início a alguma funcionalidade-->
+
+
+
+<canvas width="600"  height="400"></canvas>
+
+
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(evento) {
+
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
+
+        // desenhar uma circulo ao clicar no canvas
+        pincel.fillStyle = 'white'; // Da a cor que o desenho criado vai ser
+        pincel.beginPath();//inicia um novo desenho
+        pincel.arc(x, y, 10, 0, 2 * 3.14); // cria o padrão do tamanho do circulo
+        pincel.fill(); // Apresenta o desenho criado
+
+        console.log('X: ' + x + ', ' +'Y: '+ y);
+    }
+
+    tela.onclick = desenhaCirculo;
+
+</script>

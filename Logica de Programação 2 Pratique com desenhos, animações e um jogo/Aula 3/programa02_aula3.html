@@ -1,0 +1,79 @@
+<!--Dessa vez, só temos o código que exibe o canvas e desenha um círculo, 
+mas a função desenhaCirculo não está associada a nenhum evento do JavaScript:-->
+
+<!--<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(evento) {
+
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
+        pincel.fillStyle = 'blue';
+        pincel.beginPath();
+        pincel.arc(x, y, 10, 0, 2 * 3.14);
+        pincel.fill();
+        console.log(x + ',' + y);
+
+    }
+
+</script>-->
+
+<!--O desafio agora é o seguinte. Se andarmos com o ponteiro do mouse sobre a tela enquanto o botão esquerdo é pressionado, 
+vamos desenhar um círculo. Isso significa que enquanto não soltarmos o botão esquerdo, desenharemos um círculo ao lado do outro, 
+que na verdade dará um efeito que estamos passando um pincel na tela. Se soltarmos o botão esquerdo, o ato de mover o mouse sob a 
+tela não deverá desenhar nada. No final, queremos um efeito parecido com ferramentas como Paint Brush ou Photoshop, que permite o usuário desenhar na tela.
+
+O evento do JavaScript que permite capturar o movimento do mouse, e logo sua coordenada, é o onmousemove, contudo esse evento não é 
+capaz de saber se o botão do mouse está clicando ou não. E agora?
+
+Existem os eventos, onmousedown e onmouseup. O primeiro é disparado toda vez que o botão esquerdo do mouse é pressionado e o 
+segundo quando ele é solto. Sendo assim, de alguma maneira, nossa função desenhaCirculo só pode desenhar na tela se o botão estiver pressionado, se não estiver, nada acontecerá.
+
+E agora, como resolver? DICA: as funções passadas para onmousedown e onmouseup podem alterar o valor de uma variável, que será 
+usada por desenhaCirculo para saber se ele desenhará ou não um círculo. Complicou? Nada que um momento de reflexão não resolva.-->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var desenha = false; //É essa variável que será utilizada pela função desenhaCirculo para saber se ela deve ou não desenhar
+
+  // atribuindo diretamente a função anônima
+   tela.onmousemove = function(evento) {
+
+        if(desenha) {
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillStyle = 'blue';
+            pincel.beginPath();
+            pincel.arc(x, y, 10, 0, 2 * 3.14);
+            pincel.fill();
+        }
+        console.log(x + ',' + y);
+    }
+
+    //Veja que declaramos as funções habilitaDesenhar e desabilitaDesenhar para lidar com o "liga e desliga" da habilidade de desenharmos com o mouse
+    
+    tela.onmousedown = function() { //  serve para executar um código quando o mouse é pressionado
+
+        desenha = true;
+    }
+
+     tela.onmouseup = function() { // serve para executar um código quando o botão do mouse é solto
+
+        desenha = false;
+    }
+
+</script>
+

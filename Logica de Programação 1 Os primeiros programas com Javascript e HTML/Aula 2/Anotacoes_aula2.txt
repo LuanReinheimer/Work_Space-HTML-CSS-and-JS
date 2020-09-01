@@ -1,0 +1,77 @@
+
+Lógica de programação I Os primeiros passos com Js e HTML.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Todo codigo HTML se incia com a tag <meta charset="UTF-8">
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A primeira instrução que aprendemos do mundo JavaScript foi a alert. 
+Ela exibe uma janela para o usuário e recebe como parâmetro um texto. Lembre-se que parâmetros são passados entre a abertura e o fechamento de parênteses (). 
+No caso, o texto em JavaScript deve vir entre aspas duplas. Sendo assim, temos:
+
+alert("Isso será exibido para o usuário");
+
+<script>
+
+    alert("Isso será exibido para o usuário");
+   
+</script>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O mundo JavaScript é representado por tudo que está inserido na tag <script>. 
+Todo o conteúdo desta tag é interpretado pelo navegador como JavaScript. O mundo HTML é compreendido como tudo que está fora da tag <script>. 
+O que faremos é escrever, a partir do mundo JS, um HTML. Para isto, adicionaremos document.write():
+
+<script>
+    
+    document.write("Estou escrevendo do mundo JavaScript no mundo HTML");
+
+</script>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Lembre-se que tudo que estiver entre as TAG's <script> e </script> é considerado pelo navegador como código JavaScript e tudo que estiver fora das TAG's, 
+não importa em que lugar, é código HTML.
+
+<meta charset="UTF-8">
+    Estou escrevendo do mundo JavaScript no mundo HTML
+<script>
+
+</script>
+    Aqui também é mundo HTML, porque esta fora da TAG script
+
+A vantagem é que com document.write podemos passar o resultado de um cálculo entre outras coisas de maneira dinâmica 
+já que o mundo HTML não é capaz de realizar operações matemáticas.
+
+Desse modo, podemos fazer o seguinte:
+
+<meta charset="UTF-8">
+<script>
+    document.write(10 + 20);
+</script>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Por fim, não podemos escrever no mundo HTML instruções JavaScript:
+
+<meta charset="UTF-8">
+
+document.write("Seja bem-vindo");
+<script>
+
+</script>
+O HTML não entende que deve exibir o texto passado pela instrução, ele imprime a instrução e não seu resultado! Sendo assim, fique atento sempre que escrever seu código.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Concatenação é um termo usado em computação para designar a operação de unir o conteúdo de duas strings.
+Exemplo:
+<meta charset="UTF-8">
+<script>
+    document.write("Eu acertei: " + 15/50*100 + "%" );
+</script>
+O resultado exibido é: Eu acertei: 30%
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

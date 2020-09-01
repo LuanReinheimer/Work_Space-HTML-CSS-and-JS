@@ -1,0 +1,86 @@
+
+/* Configuração CSS das Citaçoes dentro da BIO.html*/ 
+.citacao-bio {
+    background-color: #D9E5E3;
+    border: .5em solid #C2CCCA;
+    padding: 1em;
+    margin: 1em 2em;
+    width: 30ch;
+    box-sizing: border-box;
+}
+
+/* Ao passar o mouse por cima das caixas ele deixa toda a pagina escura*/
+.citacao-bio:hover {
+    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+    transition: 450ms;
+}
+
+/* Colocando uma grande abertura de aspas no fundo das citações na página*/
+.citacao-bio::before {
+    content: '“';
+    position: absolute;
+    font-size: 10em;
+    color: #bbb;
+    line-height: .8
+}
+
+/* Referente as citações */
+.citacao-bio > p {
+    position: relative;
+}
+
+
+.petrobras {
+    float: left;
+    margin-left: 0;
+}
+
+.fiat {
+    float: right;
+    margin-right: 0;
+}
+
+/* Pega a primeira letra em uma nova estilização */
+.container > p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: #3C1D3D;
+    text-shadow: 1px 1px #000;
+    margin-right: .2ch;
+    line-height: 1;
+}
+
+/* Edição para as tabelas*/
+
+.habilidades {
+    border-collapse: separate;
+    border-spacing: .25em;
+    margin: 1em 0;
+}
+
+.habilidades th {
+    font-weight: bold;
+    background-color: #851944;
+    color: white;
+}
+
+.habilidades td {
+    background-color: #eee;
+}
+
+.habilidades th,
+.habilidades td {
+    padding: 1em;
+}
+
+.habilidades thead th {
+    background-color: #3C1D3D;
+}
+
+.habilidades [colspan] {
+    text-align: center;
+    font-style: italic;
+}
+.habilidades [rowspan] {
+    vertical-align: middle;
+}

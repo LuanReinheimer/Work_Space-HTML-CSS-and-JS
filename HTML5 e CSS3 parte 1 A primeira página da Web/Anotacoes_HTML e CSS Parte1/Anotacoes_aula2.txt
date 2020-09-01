@@ -1,0 +1,80 @@
+HTML5 e CSS3 parte 1: A primeira página da Web
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A declaração <! DOCTYPE>
+
+A <!DOCTYPE>declaração representa o tipo de documento e ajuda os navegadores a exibir páginas da web corretamente.
+
+Ele deve aparecer apenas uma vez, na parte superior da página (antes de qualquer tag HTML).
+
+A <!DOCTYPE>declaração não diferencia maiúsculas de minúsculas.
+
+A <!DOCTYPE>declaração para HTML5 é:
+
+<!DOCTYPE html>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exemplo e estrutura simples de um documento HTML.
+
+Um documento HTML simples
+
+Exemplo;
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Page Title</title>
+    </head>
+
+    <body>
+
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+
+    </body>
+
+</html>
+
+As informações que estamos passando para o navegador ficam no <head>
+As informações que queremos exibir na nossa página ficam no <body>
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O que é codificação de caracteres?
+ASCII foi o primeiro padrão de codificação de caracteres (também chamado de conjunto de caracteres). O ASCII definiu 128 caracteres alfanuméricos diferentes que poderiam ser usados ​​na internet: números (0-9), letras em inglês (AZ) e alguns caracteres especiais como! $ + - () @ <>.
+
+ISO-8859-1 era o conjunto de caracteres padrão para o HTML 4. Esse conjunto de caracteres suportava 256 códigos de caracteres diferentes.
+
+ANSI (Windows-1252) era o conjunto de caracteres original do Windows. O ANSI é idêntico ao ISO-8859-1, exceto que o ANSI possui 32 caracteres extras.
+
+Como o ANSI e o ISO-8859-1 eram muito limitados, o HTML 4 também suportava UTF-8.
+
+UTF-8 (Unicode) cobre quase todos os caracteres e símbolos do mundo.
+
+O conjunto de caracteres padrão para HTML5 é UTF-8.
+
+O atributo charset HTML
+Para exibir uma página HTML corretamente, um navegador da web deve conhecer o conjunto de caracteres usado na página.
+
+Isso é especificado na <meta>tag:
+
+<meta charset="UTF-8">
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Nesta aula, aprendemos:
+
+A definir a estrutura básica do HTML
+Com a tag DOCTYPE, definimos qual versão do HTML estamos utilizando
+A tag <html>, que marca o conteúdo a ser renderizado no navegador
+Dentro desta tag, podemos definir a linguagem da página, através da propriedade lang
+Como passar as informações do encoding da nossa página para o navegador, através da tag <meta> e da propriedade charset
+Como definir o título de uma página, através da tag <title>
+Como separar as informações que estão sendo passadas para o navegador, utilizando a tag <head>
+Como separar o conteúdo da página, utilizando a tag <body>

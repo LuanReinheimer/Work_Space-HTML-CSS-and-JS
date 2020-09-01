@@ -1,0 +1,58 @@
+JavaScript: Programando na linguagem da web
+
+Para mais teoria : https://www.w3schools.com/js/default.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Todo array possui a função forEach(), em JavaScript. Passamos para ela uma função por parâmetro, e nessa função fazemos o que quisermos para cada item do array. 
+O item do array é recebido por parâmetro na função interna:
+
+Método JavaScript Array forEach (): https://www.w3schools.com/jsref/jsref_foreach.asp
+
+Definição e Uso
+O forEach()método chama uma função uma vez para cada elemento em uma matriz, em ordem.
+
+Nota: a função não é executada para elementos de matriz sem valores.
+
+Exemplo:
+Obtenha a soma de todos os valores na matriz:
+
+var sum = 0;
+var numbers = [65, 44, 12, 4];
+numbers.forEach(myFunction);
+
+function myFunction(item) {
+  sum += item;
+  document.getElementById("demo").innerHTML = sum;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Com a propriedade innerHTML, podemos editar obter o conteúdo HTML (HTML interno) de um elemento: https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML
+
+Para editar o HTML interno, como o innerHTML é uma propriedade, utilizamos um sinal de igual (=). Fazemos:
+
+ObjetoDeUmElementoHTML.innerHTML = "Novo conteúdo"
+E para obter o HTML interno, fazemos:
+
+ObjetoDeUmElementoHTML.innerHTML
+O seu retorno será todo o conteúdo HTML, tanto tags, atributos, classes, etc, no formato de uma String.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Método JavaScript Array push (): https://www.w3schools.com/jsref/jsref_push.asp ou https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+
+Definição e Uso
+O método push () adiciona novos itens ao final de uma matriz e retorna o novo comprimento.
+
+Nota: Os novos itens serão adicionados ao final da matriz.
+
+Nota: Este método altera o comprimento da matriz.
+
+Dica: Para adicionar itens no início de uma matriz, use o método unshift () .
+
+Exemplo
+Adicione mais de um item:
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi", "Lemon", "Pineapple");
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

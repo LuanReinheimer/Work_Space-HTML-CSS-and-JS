@@ -1,0 +1,42 @@
+JavaScript: Programando na linguagem da web
+
+Para mais teoria : https://www.w3schools.com/js/default.asp e https://developer.mozilla.org/en-US/docs/Web/Events
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O XMLHttpRequest: https://developer.mozilla.org/pt-BR/docs/Web/API/XMLHTTPRequest
+É um objeto do JS responsável por fazer requisições HTTP. O trecho XML do nome indica que ele era utilizado anteriormente para realizar o transporte de 
+dados do tipo XML, no entanto, atualmente ele consegue trafegar outros tipos de dados, como textos.
+
+O objeto XMLHttpRequest é quem é responsável por fazer requisições HTTP assíncronas com Javascript. Apesar de ter o XML no nome hoje em dia este objeto pode trafegar 
+diversos outros tipos de dados além do XML, este nome só se manteve devido a um legado histórico.
+
+E para instanciar um novo Objeto XMLHttpRequest devemos utilizar a sintaxe com a palavrinha new :
+
+var xhr = new XMLHttpRequest();
+
+XMLHttpRequest é um objeto que fornece funcionalidade ao cliente para transferir dados entre um cliente e um servidor. Ele fornece uma maneira fácil de recuperar dados de um URL sem ter que fazer uma atualização de página inteira. Isso permite que uma página da Web atualize apenas uma parte do conteúdo sem interromper o que o usuário esteja fazendo. XMLHttpRequest é usado constantemente na programação de AJAX.
+
+XMLHttpRequest foi originalmente projetado pela Microsoft e adotado pela Mozilla, Apple e Google. Está sendo padronizado pela WHATWG. Apesar do nome, XMLHttpRequest pode ser usado para recuperar qualquer tipo de dados, e não apenas XML, suportando também, protocolos diferentes de HTTP (incluindo file e ftp ).
+
+Para criar uma instância de XMLHttpRequest , basta fazer isso:
+
+var myRequest = new XMLHttpRequest();
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Introdução ao AJAX;
+
+https://www.w3schools.com/js/js_ajax_intro.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Neste capítulo aprendemos:
+
+Como fazer uma requisição assíncrona com o Javascript
+O objeto XMLHttpRequest
+Como configurar e enviar uma requisição
+O evento de load
+O que é a técnica AJAX.
+O formato JSON
+Como converter JSON para um objeto Javascript com a função JSON.parse()
+Como lidar com erros durante o AJAX

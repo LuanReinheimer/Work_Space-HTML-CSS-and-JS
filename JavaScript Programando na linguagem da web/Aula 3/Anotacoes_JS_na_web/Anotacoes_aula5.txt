@@ -1,0 +1,17 @@
+JavaScript: Programando na linguagem da web
+
+Para mais teoria : https://www.w3schools.com/js/default.asp
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Método reset () do formulário.
+
+Definição e Uso
+O método reset () redefine os valores de todos os elementos em um formulário (o mesmo que clicar no botão Redefinir).
+
+Dica: Use o método submit () para enviar o formulário.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Neste capítulo vimos
+
+Dividir o código, separando por funcionalidades do sistema
+Os objetos em Javascript
+A quebrar funções grandes em funções menores ,com cada uma com sua responsabilidade
+A função form.reset() para limpar o formulário

@@ -1,0 +1,76 @@
+<!--Desenvolvemos nosso jogo e consolidamos a lógica de programação! Agora, vamos desenvolvê-lo em outra linguagem de programação, o JavaScript.
+Mas onde iremos fazer isso, e como iremos visualizá-lo?-->
+
+<!--Utilizaremos um serviço Web chamado p5.js, que exige cadastro de uma conta para podermos salvar os nossos projetos-->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--<canvas width="600" height="400"></canvas>-->
+
+<script>
+ // Variaveis de caracteristicas da bolinha.
+let xbolinha = 100;
+let ybolinha = 50;
+let diametro_bolinha = 15;
+
+// Variavel criada para que o centro da bolinha nao seja no centro, assim ela nao entra parte para dentro ao kikar
+let raio = diametro_bolinha /2;
+
+// Variaveis de movimento bolinha.
+let velocidadeXbolinha = 6;
+let velocidadeYbolinha = 6;
+
+// Funcao criar canvas.
+function setup() {
+    createCanvas(600, 400);
+}
+
+// Funcao criar e mostrar a bolinha e dada a cor para o canvas.
+function mostraBolinha(){
+    circle(xbolinha, ybolinha, diametro_bolinha);
+}
+
+// Criacao de movimentacao para a bolinha dentro do canvas
+function movimentaBolinha(){
+    xbolinha += velocidadeXbolinha;
+    ybolinha += velocidadeYbolinha;
+}
+
+// Condicional criada para a bolinha se mexer se a bolinha estiver colodindo com as borda ou o teto executara.
+function verificaColisao(){
+  
+  if (xbolinha + raio > width ||
+    xbolinha - raio < 0){
+    
+    velocidadeXbolinha *= -1;
+  }
+  
+  if(ybolinha  + raio > height||
+    ybolinha - raio < 0){
+    
+    velocidadeYbolinha *= -1;
+  }
+}
+
+// funcao criada para fazer que tudo funcione
+function draw() {
+    background(0);
+    mostraBolinha();
+    movimentaBolinha();
+    verificaColisao();
+    
+}
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

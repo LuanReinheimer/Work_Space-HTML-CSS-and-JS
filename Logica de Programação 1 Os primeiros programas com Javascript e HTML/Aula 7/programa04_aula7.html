@@ -1,0 +1,25 @@
+<!--Nesta aula, veremos mais um conceito para nos ajudar a fixar os loops.
+ Salvaremos nosso arquivo do jogo de adivinhação como um novo, chamado estrelas.html-->
+
+ <script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    for(var linha = 1; linha <= 3; linha++) {
+
+        for(var coluna = 0; coluna < 10; coluna++) {
+            document.write("*");
+        }
+        pulaLinha();
+    }
+
+</script>

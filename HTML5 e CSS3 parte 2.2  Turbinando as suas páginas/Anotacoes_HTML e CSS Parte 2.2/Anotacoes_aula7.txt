@@ -1,0 +1,34 @@
+﻿HTML5 e CSS3 2.2: Turbinando as suas páginas
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Seletores CSS: https://www.w3schools.com/cssref/css_selectors.asp
+
+No CSS, os seletores são padrões usados ​​para selecionar o (s) elemento (s) que você deseja estilizar.
+
+Use nosso CSS Selector Tester para demonstrar os diferentes seletores.
+
+Então agora temos mais seletores que facilitarão nossa vida, além daqueles que vimos no curso anterior:
+
+tag
+id
+classe
+ancestral descendente
+irmão ~ irmão : https://www.w3schools.com/cssref/sel_gen_sibling.asp
+irmão + irmão seguinte: https://www.w3schools.com/cssref/sel_element_pluss.asp
+pai > filho: https://www.w3schools.com/cssref/sel_element_gt.asp
+
+muitas vezes nos ajudar, eles possuem alguns problemas como:
+
+Legibilidade: é difícil agrupar mais de um símbolo e deixar claro o que queremos com eles;
+Desempenho: o navegador terá muito trabalho para analisar toda a estrutura do HTML;
+Fragilidade: a chance de errarmos no código na hora de implementá-lo é grande.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

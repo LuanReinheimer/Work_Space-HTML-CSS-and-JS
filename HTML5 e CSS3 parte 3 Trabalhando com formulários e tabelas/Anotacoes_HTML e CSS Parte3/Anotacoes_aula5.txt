@@ -1,0 +1,26 @@
+HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Qual propriedade do CSS usamos para aumentar um elemento proporcionalmente?
+
+transform: scale()
+
+Alternativa correta! Utilizamos a propriedade transform: scale() para aumentar um elemento proporcionalmente.
+
+Definição e Uso
+A transformpropriedade aplica uma transformação 2D ou 3D a um elemento. Essa propriedade permite girar, dimensionar, mover, inclinar etc., elementos.
+
+Para entender melhor a propriedade transform, veja uma demonstração: https://www.w3schools.com/cssref/css3_pr_transform.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Utilizamos a propriedade transform: rotate() para "girar" um elemento em seu eixo.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Nesta aula, aprendemos:
+
+Como estilizar o botão de envio de formulário
+A realizar transições nos nossos elementos, com a propriedade CSS transition
+A modificar o estilo do ponteiro do mouse, quando passar por cima de determinado elemento, através da propriedade CSS cursor
+A realizar transformações nos nossos elementos, como aumentar proporcionalmente a escala de determinado elemento ou rotacioná-lo, através da propriedade CSS transform

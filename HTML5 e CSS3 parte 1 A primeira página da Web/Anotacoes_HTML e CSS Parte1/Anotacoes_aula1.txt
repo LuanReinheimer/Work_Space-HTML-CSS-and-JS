@@ -1,0 +1,59 @@
+HTML5 e CSS3 parte 1: A primeira página da Web
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HTML é a linguagem de marcação padrão para páginas da Web.
+
+Com HTML, você pode criar seu próprio site.
+
+HTML é fácil de aprender - você vai se divertir!
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O que é HTML?
+HTML é a linguagem de marcação padrão para criar páginas da Web.
+
+HTML significa Hyper Text Markup Language
+HTML descreve a estrutura de uma página da Web
+HTML consiste em uma série de elementos
+Os elementos HTML informam ao navegador como exibir o conteúdo
+Os elementos HTML são representados por tags
+As tags HTML rotulam partes do conteúdo, como "cabeçalho", "parágrafo", "tabela" e assim por diante
+Os navegadores não exibem as tags HTML, mas as usam para renderizar o conteúdo da página
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exemplo explicado
+A <!DOCTYPE html>declaração define este documento como HTML5
+O <html>elemento é o elemento raiz de uma página HTML
+O <head>elemento contém meta informações sobre o documento
+O <title>elemento especifica um título para o documento
+O <body>elemento contém o conteúdo da página visível
+O <h1>elemento define um cabeçalho grande
+O <p>elemento define um parágrafo
+O <strong> informações do texto, deixando-as em negrito,
+O <em> Dar ênfase para algumas informações do texto, deixando-as em itálico
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tags HTML
+Tags HTML são nomes de elementos entre colchetes:
+
+o conteúdo do <tagname> entra aqui ... </tagname>
+
+As tags HTML normalmente vêm em pares como <p>e</p>
+A primeira tag em um par é a tag inicial, a segunda tag é a tag final
+A tag final é escrita como a tag inicial, mas com uma barra inserida antes do nome da tag
+Dica: a tag inicial também é chamada de tag de abertura e a tag final, a tag de fechamento .
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Nesta aula, aprendemos:
+
+Uma introdução ao HTML e às suas tags
+Como definir o título e os parágrafos de um texto
+Utilizando as tags <h1> e <p>, respectivamente
+Como dar destaque para algumas informações do texto, deixando-as em negrito, utilizando a tag <strong>
+Como dar ênfase para algumas informações do texto, deixando-as em itálico, utilizando a tag <em>
+

@@ -1,0 +1,55 @@
+Lógica de programação I Os primeiros passos com Js e HTML.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Como criamos uma função no JS? Convencionaremos que todas as funções que criarmos estarão nas primeiras instruções da tag <script>, 
+ou seja, declararemos no início do código. 
+Para declararmos uma função, utilizaremos o termo em inglês function e Toda função possui um bloco, que é caracterizado pelo uso de { e }
+Um ponto importante - a função é sempre descrita por um verbo, seja ele "pula", "grita", "comemora", ou qualquer outro -, 
+isto porque ela sempre indica uma ação a ser executada.
+
+Exemplo:
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+
+}
+//...
+</script>
+
+Uma função pode ser um atalho para várias outras instruções, por exemplo, quando pulaLinha() for processado, 
+é como se o JavaScript estivesse substituindo por duas quebras de linha no formato document.write("<br>")
+
+Uma função representa um conjunto de instruções, e é possível ter uma, duas, cem instruções - não há limites. 
+Sendo assim, será desnecessário reescrevê-las em diversos pontos no código, basta utilizarmos a função criada.
+
+Porém, é preciso ter cuidado, pois se esquecermos de abrir e fechar os parênteses ao chamar uma função no codigo...
+
+Exemplo ao criar e função uma usar função.
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        alert("oi");
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+var ano = 2016;
+
+document.write("teste");
+
+pulaLinha();
+
+document.write("teste");
+
+pulaLinha();
+
+</script>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

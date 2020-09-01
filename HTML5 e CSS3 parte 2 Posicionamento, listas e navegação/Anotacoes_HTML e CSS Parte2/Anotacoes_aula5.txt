@@ -1,0 +1,88 @@
+HTML5 e CSS3 parte 2: Posicionamento, listas e navegação
+
+Para mais teoria : https://www.w3schools.com/html/html_css.asp
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Definições de uso do CSS nesta aula.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Propriedade de borda CSS: https://www.w3schools.com/css/css_outline.asp e https://www.w3schools.com/cssref/pr_border.asp
+Definição e Uso
+A borderpropriedade é uma propriedade abreviada para:
+
+largura da borda
+estilo de borda (obrigatório)
+Cor da borda
+Se a cor da borda for omitida, a cor aplicada será a cor do texto
+
+Exemplo
+Defina o estilo das bordas para diferentes elementos:
+
+h1 {
+  border: 5px solid red;
+}
+
+h2 {
+  border: 4px dotted blue;
+}
+
+div {
+  border: double;
+}
+
+Estilo de estrutura de tópicos CSS
+A outline-stylepropriedade especifica o estilo do contorno e pode ter um dos seguintes valores:
+
+dotted - Define um contorno pontilhado
+dashed - Define um esboço tracejado
+solid - Define um contorno sólido
+double - Define um contorno duplo
+groove - Define um contorno estriado 3D
+ridge - Define um contorno estriado em 3D
+inset - Define um contorno 3D embutido
+outset - Define um esboço inicial 3D
+none - Define sem contorno
+hidden - Define um contorno oculto
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Propriedade border-radius CSS: https://www.w3schools.com/cssref/pr_border.asp
+
+Definição e Uso
+A border-radiuspropriedade define o raio dos cantos do elemento.
+
+Dica: Essa propriedade permite adicionar cantos arredondados aos elementos! 
+
+Esta propriedade pode ter de um a quatro valores. Aqui estão as regras:
+
+Quatro valores - raio da borda: 15px 50px 30px 5px; (o primeiro valor se aplica ao canto superior esquerdo, o segundo valor se aplica ao canto superior direito, 
+o terceiro valor se aplica ao canto inferior direito e o quarto valor se aplica ao canto inferior esquerdo):
+
+Três valores - raio da borda: 15px 50px 30px; (o primeiro valor se aplica ao canto superior esquerdo, o segundo valor se aplica aos cantos superior direito e inferior 
+esquerdo e o terceiro valor se aplica ao canto inferior direito):
+
+Dois valores - raio da borda: 15px 50px; (o primeiro valor se aplica aos cantos superior esquerdo e inferior direito e o segundo valor se aplica aos cantos superior direito 
+e inferior esquerdo):
+
+Um valor - raio da borda: 15px; (o valor se aplica a todos os quatro cantos, que são arredondados igualmente:
+
+Exemplo
+Adicione cantos arredondados a dois elementos <div>:
+
+#example1 {
+  border: 2px solid red;
+  border-radius: 25px;
+}
+
+#example2 {
+  border: 2px solid red;
+  border-radius: 50px 20px;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nesta aula, aprendemos:
+
+Através do CSS, aplicar bordas nos elementos.
+Os diferentes tipos de bordas.
+A deixar a borda arredondada.

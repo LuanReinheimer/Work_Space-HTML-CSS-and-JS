@@ -1,0 +1,82 @@
+<!--Temos o seguinte esboço de código:
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function limpaTela() {
+
+        pincel.clearRect(0, 0, 600, 400);
+    }
+
+</script>
+Sua tarefa será fazer uma bolinha pulsar, ou seja, seu raio deve ter tamanho mínimo de 20 e tamanho máximo de 30. Sendo assim, 
+de 20 até 30, o raio deve ser incrementado de um em um e quando o valor do raio ultrapassar o máximo, ele deve sofrer um decremento de um. 
+Contudo, fique alerta, pois se o raio se tornar menor que 20, devemos voltar a incrementá-lo e assim por diante. Para um efeito mais pomposo, use 
+20 milissegundos na taxa de atualização da tela.-->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function limpaTela() {
+
+        pincel.clearRect(0, 0, 600, 400);
+    }
+
+    var raio = 19;
+
+    // Ainda não sabemos qual fator usar. Precisamos saber consultando o tamanho atual do raio
+    var fatorCrescimento = 1; // O primeiro passo será definir o tamanho inicial do raio em uma variável. Além disso, vamos definir uma variável chamada fatorCrescimento.
+
+    //Agora, vamos criar uma função que será a responsável em atualizar nossa tela, redesenhando nosso círculo, que pode crescer ou não, de acordo com um critério:
+
+    function atualizaTela() {
+
+        // limpamos sempre a tela para podermos desenhar um novo círculo
+        limpaTela();
+
+        if(raio > 30) {
+            // o raio tem que diminuir
+            fatorCrescimento = -1;
+        } else if (raio < 20) {
+            // o raio tem que aumentar
+            fatorCrescimento = 1;
+            }
+
+
+        raio = raio + fatorCrescimento;
+
+        desenhaCirculo(300, 200, raio, 'blue');
+
+    }
+
+        setInterval(atualizaTela, 20); //Mas quem vai chamar nossa função atualizaTela? A função setInterval do JavaScript, aliás, usaremos uma taxa de atualização de 20 milisegundos
+
+</script>
